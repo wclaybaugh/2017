@@ -20,3 +20,4 @@ layout: "default"
 - [Lecture 10](lecture10.html): Metropolis-Hastings and Bayes
 - [Lab 5](lab5.html): Metropolis and Bayes
 - [Lecture 11](lecture11.html): Bayes
+- [Lecture 12](lecture12.html): Gibbs and Hierarchical Models
