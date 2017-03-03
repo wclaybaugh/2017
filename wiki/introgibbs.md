@@ -1,8 +1,9 @@
 ---
 title:  Intro to Gibbs Sampling
-shorttitle:  Intro to Gibbs Sampling
+shorttitle: introgibbs
 notebook: introgibbs.ipynb
 noline: 1
+summary: "We introduce the basic idea of gibbs as a markov chain in which the transition matrix can be obtained as the kernel of an integral fixed point equation by sampling alternatively from two conditionals. We work out a simple example."
 layout: wiki
 ---
 
@@ -20,6 +21,7 @@ import time
 sns.set_style('whitegrid')
 sns.set_context('poster')
 ```
+
 
 
 ## Contents
@@ -91,7 +93,7 @@ plt.contourf(xx,yy,zz);
 
 
 
-![png](introgibbs_files/introgibbs_6_0.png)
+![png](introgibbs_files/introgibbs_7_0.png)
 
 
 On first glance the functional form of this distribution looks terrible and difficult to deal with. 
@@ -183,7 +185,7 @@ plt.show()
 
 
 
-![png](introgibbs_files/introgibbs_14_0.png)
+![png](introgibbs_files/introgibbs_15_0.png)
 
 
 ### Gibbs Moves
@@ -209,7 +211,7 @@ plt.plot(out[:nr_t, 0],out[:nr_t, 1], c='r', alpha=0.5, lw=1)
 
 
 
-![png](introgibbs_files/introgibbs_16_1.png)
+![png](introgibbs_files/introgibbs_17_1.png)
 
 
 ### Autocorrelation
@@ -227,7 +229,7 @@ corrplot(out[4000:,0], 100)
 
 
 
-![png](introgibbs_files/introgibbs_18_0.png)
+![png](introgibbs_files/introgibbs_19_0.png)
 
 
 
@@ -238,7 +240,7 @@ corrplot(out[4000:,1], 100)
 
 
 
-![png](introgibbs_files/introgibbs_19_0.png)
+![png](introgibbs_files/introgibbs_20_0.png)
 
 
 Generally, gibbs samplers can show a lot of autocorrelation, needing quite a bit of thinning. This is especially true when the functions you are sampling from have lots of correlation amongst the components. But as in all MCMC algorithms, the number of samples needed depends on what you are doing. Fully characterizing a posterior needs a lot of samples, but  you might be able to get away with less in computing expectations...

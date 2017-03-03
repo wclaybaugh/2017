@@ -1,8 +1,9 @@
 ---
 title: Gibbs with conditional a conjugate
-shorttitle: Gibbs with conditional a conjugate
+shorttitle: gibbsconj
 notebook: gibbsconj.ipynb
 noline: 1
+summary: "Gibbs sampler for a model in which  one of the conditionals look like a distribution which is part of a conjugate pair. In this case we can use Bayes theorem to get the other conditional by multiplying the known conditional by a marginal which is the other part of the conjugate pair. Our example involves a $Binom$ conditional. Multiplying by a $Beta$ marginal leaves us with the other conditional as another $Beta$."
 layout: wiki
 ---
 
@@ -24,14 +25,15 @@ sns.set_context('poster')
 
 
 
-We now going to take a look at a slightly more complicated case that was originally outlined in full generality by Casella and George (1992). Suppose we have a nasty looking joint distribution given as: 
-
-$$p(x,y) = \binom{16}{y} x^{y+1} (1-x)^{19-y}$$
 
 ## Contents
 {:.no_toc}
 * 
 {: toc}
+
+We now going to take a look at a slightly more complicated case that was originally outlined in full generality by Casella and George (1992). Suppose we have a nasty looking joint distribution given as: 
+
+$$p(x,y) = \binom{16}{y} x^{y+1} (1-x)^{19-y}$$
 
 ## Looks like a binomial
 
@@ -103,5 +105,5 @@ plt.show()
 
 
 
-![png](gibbsconj_files/gibbsconj_11_0.png)
+![png](gibbsconj_files/gibbsconj_12_0.png)
 

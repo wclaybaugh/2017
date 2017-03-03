@@ -1,8 +1,9 @@
 ---
 title: Gibbs from Metropolis-Hastings
-shorttitle: gibbsfrommh
+shorttitle: gibbsfromMH
 layout: wiki
 keywords: ['gibbs','metropolis', 'mcmc', 'metropolis-hastings']
+summary: "We show that Gibbs is a special case of a MH sampler with proposal distribution a conditional on one variable holding all others constant."
 ---
 
 We need to show that Gibbs Sampling converges to our target distribution. We start with a componentwise MH update.

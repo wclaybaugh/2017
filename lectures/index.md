@@ -21,3 +21,4 @@ layout: "default"
 - [Lab 5](lab5.html): Metropolis and Bayes
 - [Lecture 11](lecture11.html): Bayes
 - [Lecture 12](lecture12.html): Gibbs and Hierarchical Models
+- [Lab 6](lab6.html): Tetchy Gibbs and Rat Tumor Hierarchical Model

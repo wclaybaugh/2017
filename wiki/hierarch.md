@@ -1,8 +1,11 @@
 ---
 title: Hierarchical Models
-shorttitle: Hierarchical Models
+shorttitle: hierarch
 notebook: hierarch.ipynb
 noline: 1
+summary: "Hierarchical models enable us to use gibbs sampling and priors which learn from data. We see how to set up such models using Gelman's rat tumors example. In this fashion statistically weak units such as low sample size experiments can be regularized towards the prior. 
+
+Such shrinkage is observed both when the aproximate Empirical Bayes methodology is used to estimate the prior's parameters (hyper-parameters), and when we do a full bayesian analysis by putting weakly informative hyper-priors on the hyper-parameters. The exact mechanism of setting up the hierarchy in the model depends on the exchangeability of units in our analysis, but once we set it up, conditionals simply involve sampling from parents."
 layout: wiki
 ---
 
@@ -21,6 +24,7 @@ import time
 sns.set_style('whitegrid')
 sns.set_context('poster')
 ```
+
 
 
 ## Contents
@@ -167,7 +171,7 @@ plt.hist(tumor_rat);
 
 
 
-![png](hierarch_files/hierarch_8_0.png)
+![png](hierarch_files/hierarch_9_0.png)
 
 
 ## Setting up the model
@@ -319,7 +323,7 @@ plt.ylabel("posterior means under EB");
 
 
 
-![png](hierarch_files/hierarch_19_0.png)
+![png](hierarch_files/hierarch_20_0.png)
 
 
 As you can see, the posterior rates are shrunk towards flatness, which would correspond to complete pooling. The 45 degree line would be for completely unpooled estimate.
