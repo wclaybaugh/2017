@@ -12,6 +12,8 @@ layout: wiki
 
 
 
+
+
 ## Contents
 {:.no_toc}
 * 
@@ -74,7 +76,7 @@ plt.contourf(xg,yg,z2)
 
 
 
-    <matplotlib.contour.QuadContourSet at 0x1191506a0>
+    <matplotlib.contour.QuadContourSet at 0x116d1ab00>
 
 
 
@@ -129,7 +131,7 @@ To assess how the sampler is exploring the space, we can plot a **traceplot** fo
 
 ```python
 def traceplot(z):
-    plt.plot(z);
+    plt.plot(z, alpha=0.3);
 ```
 
 
@@ -196,14 +198,14 @@ Because we are in two dimensions, we can also plot the path that the sampler too
 ```python
 plt.contourf(xg,yg,z2, alpha=0.6)
 plt.scatter(xall[::10],yall[::10], alpha=0.01, c='k', s=5)
-plt.plot(xall[:100],yall[:100], c='r', alpha=0.3, lw=1)
+plt.plot(xall[:200],yall[:200], c='r', alpha=0.3, lw=1)
 ```
 
 
 
 
 
-    [<matplotlib.lines.Line2D at 0x11ac555f8>]
+    [<matplotlib.lines.Line2D at 0x108fee128>]
 
 
 
@@ -221,7 +223,7 @@ To see how effective the samples we have drawn will be at approximating summarie
 def corrplot(trace, maxlags=50):
     plt.acorr(trace-np.mean(trace),  normed=True, maxlags=maxlags);
     plt.xlim([0, maxlags])
-corrplot(x)
+corrplot(xall[N//10:])
 ```
 
 
@@ -311,8 +313,8 @@ print("Effective Size for y: ", esy, " of ", len(y), " samples, rate of", esy/le
 ```
 
 
-    Effective Size for x:  9431.18679291  of  36001  samples, rate of 26.1970133966 %.
-    Effective Size for y:  9554.19492162  of  36001  samples, rate of 26.5386931519 %.
+    Effective Size for x:  10115.8236073  of  36001  samples, rate of 28.0987295001 %.
+    Effective Size for y:  10264.5088434  of  36001  samples, rate of 28.5117325726 %.
 
 
 Note that while the effective size is only just over 25% of the actual sample size, we can draw samples so quickly from the posterior that this is not a major hindrance. 

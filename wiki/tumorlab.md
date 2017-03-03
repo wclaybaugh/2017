@@ -12,6 +12,8 @@ layout: wiki
 
 
 
+
+
 ## Contents
 {:.no_toc}
 * 
@@ -262,7 +264,7 @@ numthetas
 
 ### Using logs
 
-So far we have used distributions directly for our sampling.  This is a bad idea for large numbers of parameters (here we have 72). Small numbers multiply smaller and we can get underflow fast. Its better to subtract -72 from -56 than to do $\frac{10^{-56}}{10^{-72}}#. Thus for our posterior computations in the acceptance ratio, we must take logs
+So far we have used distributions directly for our sampling.  This is a bad idea for large numbers of parameters (here we have 72). Small numbers multiply smaller and we can get underflow fast. Its better to subtract -72 from -56 than to do $\frac{10^{-56}}{10^{-72}}$. Thus for our posterior computations in the acceptance ratio, we must take logs
 
 We set up python functions for each draw
 
@@ -272,17 +274,24 @@ We set up python functions for each draw
 from scipy.special import gammaln
 
 # prior for the hyperparameters
-log_prior = lambda a,b: -2.5*np.log(a + b)
+def log_prior(a, b):
+    if a <= 0 or b <=0:
+        return -np.inf
+    return -2.5*np.log(a + b)
 
 # sampling from conditional posterior for the theta
 draw_thetas = lambda a,b: beta.rvs(a+tumory,b+tumorn-tumory, size=numthetas)
 
 # conditional posterior (pdf) for alpha
 def log_cond_alpha(a,b, thetas):
+    if a <= 0 or b <=0:
+        return -np.inf
     return numthetas*(gammaln(a+b) - gammaln(a)) + a*np.sum(np.log(thetas)) + log_prior(a,b)
    
 # conditional posterior (pdf) for beta
 def log_cond_beta(a,b, thetas):
+    if a <= 0 or b <=0:
+        return -np.inf
     return numthetas*(gammaln(a+b) - gammaln(b)) + b*np.sum(np.log(1.0 - thetas)) + log_prior(a,b)
   
 # using the above pdfs we draw for alpha and beta in MH fashion
@@ -333,8 +342,8 @@ thetas=np.empty((totaltraces, numthetas))
 
 # these are the step sizes for the proposal distribution
 # for our M-H sampling for alpha and beta to be used in Gibbs sampling later
-alpha_prop_sd=0.25
-beta_prop_sd=2.
+alpha_prop_sd=0.6
+beta_prop_sd=3.2
 
 #start positions
 alphas[0]=1.
@@ -362,7 +371,7 @@ print("sampling took: ", time.clock()-start, " seconds.")
 ```
 
 
-    sampling took:  47.563739999999996  seconds.
+    sampling took:  56.85751099999999  seconds.
 
 
 Check our acceptance ratio, and then remove burnin samples and thin
@@ -377,7 +386,7 @@ accepteds['alpha']/numtraces, accepteds['beta']/numtraces
 
 
 
-    (0.648695, 0.59047)
+    (0.364405, 0.434105)
 
 
 
@@ -415,7 +424,7 @@ plt.ylabel('beta')
 
 
 
-    <matplotlib.text.Text at 0x125fa0dd8>
+    <matplotlib.text.Text at 0x12a0f3f98>
 
 
 
@@ -507,7 +516,7 @@ plt.ylabel('p(theta_0| everything)')
 
 
 
-    <matplotlib.text.Text at 0x12755a710>
+    <matplotlib.text.Text at 0x12b982240>
 
 
 
@@ -601,7 +610,7 @@ In other words the full posterior so far (for the 70 experiments) becomes the ne
 
 $$p(\theta_{71} \vert \theta_{1..70}, \alpha, \beta, D) = \int d\alpha \,d\beta \,d\theta_{1..70} \,p(\theta_{71}, \theta_{1..70}, \alpha, \beta \vert  D)$$
 
-$$ =  \int d\alpha \,d\beta  Beta(\alpha+y_{71}, \beta + n_{71} - y_{71})  \,d\theta_{1..70} \,p(\theta_{1..70}, \alpha, \beta \vert  D)$$
+$$ =  \int d\alpha \,d\beta  Beta(\alpha+y_{71}, \beta + n_{71} - y_{71})  \int_{\theta_{1..70}} \,d\theta_{1..70} \,p(\theta_{1..70}, \alpha, \beta \vert  D)$$
 
 
 
@@ -631,14 +640,14 @@ plt.ylabel('p(theta_71| everything)');
 
 ```python
 # numpy function falttens by default
-percentiles =np.percentile(posterior71, [2.5,50.0, 97.5])
+percentiles =np.percentile(post71, [2.5,50.0, 97.5])
 
 print("Percentiles: ", percentiles)
 print("Naive rate: ", 4.0/14)
 ```
 
 
-    Percentiles:  [ 0.08641384  0.2028496   0.37799097]
+    Percentiles:  [ 0.08761508  0.2022418   0.37436015]
     Naive rate:  0.2857142857142857
 
 
