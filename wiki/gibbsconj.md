@@ -4,8 +4,11 @@ shorttitle: gibbsconj
 notebook: gibbsconj.ipynb
 noline: 1
 summary: "Gibbs sampler for a model in which  one of the conditionals look like a distribution which is part of a conjugate pair. In this case we can use Bayes theorem to get the other conditional by multiplying the known conditional by a marginal which is the other part of the conjugate pair. Our example involves a $Binom$ conditional. Multiplying by a $Beta$ marginal leaves us with the other conditional as another $Beta$."
+keywords: ['conjugate prior', 'gibbs sampler', 'mcmc', 'binomial', 'beta', 'beta-binomial']
 layout: wiki
 ---
+{% assign links = site.data.wikilinks %}
+
 
 
 

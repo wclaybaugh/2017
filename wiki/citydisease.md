@@ -1,10 +1,14 @@
 ---
 title:  Infectious disease in a city: Bayes
-shorttitle:  Infectious disease in a city: Bayes
+shorttitle: citydisease
 notebook: citydisease.ipynb
 noline: 1
+summary: ""
+keywords: ['sampling as marginalization', 'beta', 'binomial', 'beta-binomial', 'bayesian']
 layout: wiki
 ---
+{% assign links = site.data.wikilinks %}
+
 
 
 
@@ -38,7 +42,7 @@ For each individual the probability of being infected is $\theta$ so the total
 number of infected people given a sample of 20 is given 
 by a binomial. 
 
-$$\Lik = p(n,k|\theta) = Binom(n,k, \theta)=\frac{n!}{k! (n-k)! } \, \theta^k \, (1-\theta)^{(n-k)} $$
+$$\cal{L} = p(n,k|\theta) = Binom(n,k, \theta)=\frac{n!}{k! (n-k)! } \, \theta^k \, (1-\theta)^{(n-k)} $$
 
 Now, studies from other cities shows that $\theta$ varies from 0.05 to 0.20 with an average value  of 0.10. 
 
@@ -222,11 +226,4 @@ plt.legend()
 
 
 ![png](citydisease_files/citydisease_14_1.png)
-
-
-
-
-```python
-
-```
 

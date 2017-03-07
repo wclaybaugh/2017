@@ -1,10 +1,14 @@
 ---
 title:  The beta-binomial model of globe-tossing
-shorttitle:  The beta-binomial model of globe-tossing
+shorttitle: globemodel
 notebook: globemodel.ipynb
 noline: 1
+summary: ""
+keywords: ['bayesian', 'conjugate prior', 'beta', 'binomial', 'beta-binomial', 'bayesian updating', 'loss function', 'decision theory', 'sampling as marginalization', 'plug-in approximation']
 layout: wiki
 ---
+{% assign links = site.data.wikilinks %}
+
 
 
 

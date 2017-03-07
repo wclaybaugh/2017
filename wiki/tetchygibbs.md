@@ -4,8 +4,11 @@ shorttitle: tetchygibbs
 notebook: tetchygibbs.ipynb
 noline: 1
 summary: "Example of a sampler for a posterior with two lobea, and lots of correlation."
+keywords: ['mcmc', 'gibbs sampler', 'autocorrelation', 'effective sample size']
 layout: wiki
 ---
+{% assign links = site.data.wikilinks %}
+
 
 
 

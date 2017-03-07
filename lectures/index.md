@@ -22,3 +22,4 @@ layout: "default"
 - [Lecture 11](lecture11.html): Bayes
 - [Lecture 12](lecture12.html): Gibbs and Hierarchical Models
 - [Lab 6](lab6.html): Tetchy Gibbs and Rat Tumor Hierarchical Model
+- [Lecture 13](lecture13.html): Bayesian Regression and pymc3

@@ -1,10 +1,14 @@
 ---
 title: Priors
-shorttitle: Priors
+shorttitle: priors
 notebook: priors.ipynb
 noline: 1
+summary: ""
+keywords: ['conjugate prior', 'noninformative prior', 'weakly informative prior', 'jeffreys prior', 'normal-normal model', 'sampling and priors', 'bayesian', 'mcmc', 'metropolis']
 layout: wiki
 ---
+{% assign links = site.data.wikilinks %}
+
 
 
 

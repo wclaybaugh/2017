@@ -6,8 +6,11 @@ noline: 1
 summary: "Hierarchical models enable us to use gibbs sampling and priors which learn from data. We see how to set up such models using Gelman's rat tumors example. In this fashion statistically weak units such as low sample size experiments can be regularized towards the prior. 
 
 Such shrinkage is observed both when the aproximate Empirical Bayes methodology is used to estimate the prior's parameters (hyper-parameters), and when we do a full bayesian analysis by putting weakly informative hyper-priors on the hyper-parameters. The exact mechanism of setting up the hierarchy in the model depends on the exchangeability of units in our analysis, but once we set it up, conditionals simply involve sampling from parents."
+keywords: ['hierarchical model', 'bayesian', 'empirical bayes', 'rat tumors', 'partial pooling', 'kidney cancer', 'type-2 mle', 'exchangeability', 'beta', 'binomial', 'beta-binomial']
 layout: wiki
 ---
+{% assign links = site.data.wikilinks %}
+
 
 
 

@@ -3,9 +3,12 @@ title:  Tumors in Rats
 shorttitle: tumorlab
 notebook: tumorlab.ipynb
 noline: 1
-summary: "A full bayesian treatment of the rat tumor model, including a discussion on the choice of hyperprior, and posterior predictions for both an existing $\\theta_i$ and for a new $\\theta_{71}$."
+summary: "A full bayesian treatment of the rat tumor hierarchical model, including a discussion on the choice of hyperprior, and posterior predictions for both an existing $\\theta_i$ and for a new $\\theta_{71}$."
+keywords: ['rat tumors', 'mcmc', 'gibbs sampler', 'hierarchical model', 'full bayes', 'hyperprior', 'noninformative prior', 'bayesian updating', 'bayesian', 'parameter predictive', 'beta', 'binomial', 'beta-binomial']
 layout: wiki
 ---
+{% assign links = site.data.wikilinks %}
+
 
 
 
@@ -19,8 +22,7 @@ layout: wiki
 * 
 {: toc}
 
-(from [Gelman](http://www.stat.columbia.edu/~gelman/book/), chapter 5)
-
+This is an implementation of a [hierarchical]({{ links.hierarch }}) model from [Gelman](http://www.stat.columbia.edu/~gelman/book/), chapter 5. Gelman uses simulation there, but here we carry out full posteror simulations using MCMC.
 
 The below data is from tumors in female rats of type "F344" that recieve a particular drug, in 70 different experiments. 
 
@@ -140,19 +142,19 @@ Since we have historical data from 70 previous experiments to rely on, we can us
 In the $j$-th historical experiment, let the number of rats with tumors be $y_j$ and the total number of rats be $n_j$.
 Since the rats either have or dont have the tumor, it makes sense to use a Binomial Model for **each** experiment, assumes a sample size $n_j$ and a probability $\theta_j$ that a rat has a tumor. For any one of the experiments
 
-$$p(y_i|\theta_i; n_i) =  Binom(n_i, y_i, \theta_i) $$
+$$p(y_i \vert \theta_i; n_i) =  Binom(n_i, y_i, \theta_i) $$
 
 and for all the data we have, using $Y=[y_1,\ldots, y_{70}]$ and $\Theta = [\theta_1, \ldots, \theta_{70}]$ and I use the notation
 $\{n_i\} =[n_1, \ldots, n_{70}]$
 
-$$ p(Y|\Theta; \{n_i\}) =  \prod_{i=1}^{70}Binom(n_i, y_i, \theta_i) $$
+$$ p(Y \vert \Theta; \{n_i\}) =  \prod_{i=1}^{70}Binom(n_i, y_i, \theta_i) $$
 
 
 We now need to choose a prior $p(\Theta)$. Our first thought might be to use a Beta (conjugate prior to Binomial) for each $\theta_i$, i.e.
 
 $$ \theta_i \sim Beta(\alpha_i, \beta_i).$$
 
-$$p(\Theta| \{\alpha_i\}, \{\beta_i\}) = \prod_{i=1}^{70} Beta(\theta_i, \alpha_{i}, \beta_{i}),$$
+$$p(\Theta \vert \{\alpha_i\}, \{\beta_i\}) = \prod_{i=1}^{70} Beta(\theta_i, \alpha_{i}, \beta_{i}),$$
 
 where $\alpha_i$ and $\beta_i$ are what we called **hyperparameters**. Again I use the notation $\{\alpha_i\}=[\alpha_1, \ldots, \alpha_{70} ]$ and similarly for $\{beta\}$.
 
@@ -164,7 +166,7 @@ Let us compromise and assume that the $\theta_i$s are drawn from a "population d
 
 $$ \theta_i \sim Beta(\alpha, \beta).$$
 
-$$p(\Theta | \alpha, \beta) = \prod_{i=1}^{70} Beta(\theta_i, \alpha, \beta).$$
+$$p(\Theta \vert \alpha, \beta) = \prod_{i=1}^{70} Beta(\theta_i, \alpha, \beta).$$
 
 This structure is shown in the diagram below.
 
@@ -180,24 +182,24 @@ To do that we need to specify a **hyper-priors** $p(\alpha, \beta)$ on these hyp
 
 We then write out a joint posterior distribution for the $\theta$s, $\alpha$ and $\beta$.
 
-$$p( \theta_i, \alpha, \beta | y_i, n_i) \propto p(\alpha, \beta) \, p(\theta_i | \alpha, \beta) \, p(y_i | \theta_i, n_i,\alpha, \beta)$$
+$$p( \theta_i, \alpha, \beta  \vert  y_i, n_i) \propto p(\alpha, \beta) \, p(\theta_i  \vert  \alpha, \beta) \, p(y_i  \vert  \theta_i, n_i,\alpha, \beta)$$
 
 or for the whole dataset:
 
-$$ p( \Theta, \alpha, \beta | Y, \{n_i\}) \propto p(\alpha, \beta) \prod_{i=1}^{70} Beta(\theta_i, \alpha, \beta) \prod_{i=1}^{70} Binom(n_i, y_i, \theta_i)$$
+$$ p( \Theta, \alpha, \beta  \vert  Y, \{n_i\}) \propto p(\alpha, \beta) \prod_{i=1}^{70} Beta(\theta_i, \alpha, \beta) \prod_{i=1}^{70} Binom(n_i, y_i, \theta_i)$$
 
 Note that this is a high dimensional problem: there are 72 parameters (70 $\theta$s and $\alpha , \beta$).
 
 The **conditional** posterior distribution for each of the $\theta_i$, given everything else is a Beta distribution itself (remember Beta is conjugate prior to Bionomial).
 
-$p(\theta_i | y_i, n_i, \alpha, \beta) = Beta(\theta_i, \alpha + y_i, \beta + n_i - y_i)$ 
+$p(\theta_i  \vert  y_i, n_i, \alpha, \beta) = Beta(\theta_i, \alpha + y_i, \beta + n_i - y_i)$ 
 
 
 For each of $\alpha$ and $\beta$, given everything else, the posterior distributions can be shown to be:
 
-$$p(\alpha | Y, \Theta ,\beta ) \propto p(\alpha, \beta) \, \left(\frac{\Gamma(\alpha + \beta)}{\Gamma(\alpha)}\right)^N \prod_{i=1}^{N} \theta_i^{\alpha}$$
+$$p(\alpha  \vert  Y, \Theta ,\beta ) \propto p(\alpha, \beta) \, \left(\frac{\Gamma(\alpha + \beta)}{\Gamma(\alpha)}\right)^N \prod_{i=1}^{N} \theta_i^{\alpha}$$
 
-$$P(\beta | Y, \Theta ,\alpha ) \propto p(\alpha, \beta) \, \left(\frac{\Gamma(\alpha + \beta)}{\Gamma(\beta)}\right)^N \prod_{i=1}^{N} (1 - \theta_i)^{\beta}$$
+$$P(\beta  \vert  Y, \Theta ,\alpha ) \propto p(\alpha, \beta) \, \left(\frac{\Gamma(\alpha + \beta)}{\Gamma(\beta)}\right)^N \prod_{i=1}^{N} (1 - \theta_i)^{\beta}$$
 
 Note: The conditional posteriors do depend on $Y$ and $\{n\}$ via the $\theta$'s. 
 
@@ -485,11 +487,11 @@ plt.figure(figsize=[12,12])
 plt.subplot(3,2,1)
 sns.kdeplot(alphatrace)
 plt.xlabel('alpha')
-plt.ylabel('p(alpha| everything)')
+plt.ylabel('p(alpha \vert  everything)')
 plt.subplot(3,2,2)
 sns.kdeplot(betatrace)
 plt.xlabel('beta')
-plt.ylabel('p(beta| everything)')
+plt.ylabel('p(beta \vert  everything)')
 plt.subplot(3,2,3)
 plt.plot(alphatrace, betatrace,'.', alpha=0.1)
 sns.kdeplot(alphatrace, betatrace)
@@ -505,7 +507,7 @@ plt.ylabel('Log(alpha+beta)')
 plt.subplot(3,2,5)
 sns.kdeplot(thetastrace[:,0])
 plt.xlabel('theta_0')
-plt.ylabel('p(theta_0| everything)')
+plt.ylabel('p(theta_0 \vert  everything)')
 ```
 
 
@@ -624,7 +626,7 @@ post71 = beta.rvs(alphatrace+4, betatrace+10)
 ```python
 sns.kdeplot(post71)
 plt.xlabel('theta_71')
-plt.ylabel('p(theta_71| everything)');
+plt.ylabel('p(theta_71 \vert  everything)');
 ```
 
 

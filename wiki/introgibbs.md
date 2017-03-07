@@ -4,8 +4,11 @@ shorttitle: introgibbs
 notebook: introgibbs.ipynb
 noline: 1
 summary: "We introduce the basic idea of gibbs as a markov chain in which the transition matrix can be obtained as the kernel of an integral fixed point equation by sampling alternatively from two conditionals. We work out a simple example."
+keywords: ['mcmc', 'gibbs sampler', 'transition matrix', 'autocorrelation']
 layout: wiki
 ---
+{% assign links = site.data.wikilinks %}
+
 
 
 

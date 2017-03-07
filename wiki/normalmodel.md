@@ -1,10 +1,14 @@
 ---
 title:  The normal model
-shorttitle:  The normal model
+shorttitle: normalmodel
 notebook: normalmodel.ipynb
 noline: 1
+summary: ""
+keywords: ['bayesian', 'normal-normal model', 'conjugate prior']
 layout: wiki
 ---
+{% assign links = site.data.wikilinks %}
+
 
 
 

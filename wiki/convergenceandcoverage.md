@@ -1,10 +1,14 @@
 ---
 title: Convergence and Coverage
-shorttitle: Convergence and Coverage
+shorttitle: convergenceandcoverage
 notebook: convergenceandcoverage.ipynb
 noline: 1
+summary: ""
+keywords: ['mcmc', 'metropolis', 'metropolis-hastings', 'step-size', 'autocorrelation']
 layout: wiki
 ---
+{% assign links = site.data.wikilinks %}
+
 
 
 
