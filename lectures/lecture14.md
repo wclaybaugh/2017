@@ -8,4 +8,4 @@ notes: ['switchpoint', 'gewecke', 'reguninfprior', 'identifiability', 'uiridgela
 
 ## Slides
 
-- [PDF](../slides/lecture13.pdf)
+- [PDF](../slides/lecture14.pdf)
