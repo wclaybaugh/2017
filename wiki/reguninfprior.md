@@ -3,7 +3,7 @@ title: Regression with custom priors
 shorttitle: reguninfprior
 notebook: reguninfprior.ipynb
 noline: 1
-summary: ""
+summary: "Based on an example from the pytmc3 docs and Jake Vanderplas's must-read blog article at http://jakevdp.github.io/blog/2014/03/11/frequentism-and-bayesianism-a-practical-intro/ , we do in pymc a custom regression with uninformative priors. We cover how to create custom densities and how to use theno shared variables to get posterior predictives."
 keywords: ['regression', 'priors', 'uninformative priors', 'mcmc', 'bayesian', 'jeffreys prior']
 layout: wiki
 ---
@@ -14,6 +14,7 @@ layout: wiki
 {:.no_toc}
 * 
 {: toc}
+
 
 
 
@@ -54,6 +55,16 @@ ydata = np.random.normal(ydata, 10)
 ```
 
 
+We'll take a detour to be able to posterior predict elsewhere
+
+
+
+```python
+from theano import shared
+xdata_shared = shared(xdata)
+```
+
+
 
 
 ```python
@@ -64,7 +75,7 @@ plt.ylabel('y');
 
 
 
-![png](reguninfprior_files/reguninfprior_6_0.png)
+![png](reguninfprior_files/reguninfprior_9_0.png)
 
 
 
@@ -113,7 +124,7 @@ with pm.Model() as model1:
     eps = pm.DensityDist('eps', lambda value: -T.log(T.abs_(value)), testval=1)
 
     # Create likelihood
-    like = pm.Normal('y_est', mu=alpha + beta * xdata, sd=eps, observed=ydata)
+    like = pm.Normal('y_est', mu=alpha + beta * xdata_shared, sd=eps, observed=ydata)
 ```
 
 
@@ -132,7 +143,7 @@ with model1:
 ```
 
 
-    100%|██████████| 40000/40000 [00:10<00:00, 3952.57it/s] | 405/40000 [00:00<00:09, 4044.57it/s]
+    100%|██████████| 40000/40000 [00:10<00:00, 3749.52it/s] | 224/40000 [00:00<00:17, 2239.33it/s]
 
 
 
@@ -144,7 +155,7 @@ pm.traceplot(tm1);
 
 
 
-![png](reguninfprior_files/reguninfprior_14_0.png)
+![png](reguninfprior_files/reguninfprior_17_0.png)
 
 
 
@@ -155,7 +166,7 @@ pm.autocorrplot(tm1);
 
 
 
-![png](reguninfprior_files/reguninfprior_15_0.png)
+![png](reguninfprior_files/reguninfprior_18_0.png)
 
 
 ## Results
@@ -242,7 +253,7 @@ plot_MCMC_results(xdata, ydata, tm1)
 
 
 
-![png](reguninfprior_files/reguninfprior_22_0.png)
+![png](reguninfprior_files/reguninfprior_25_0.png)
 
 
 ### Gewecke convergence test
@@ -273,7 +284,7 @@ plt.xlim(0, 1000)
 
 
 
-![png](reguninfprior_files/reguninfprior_25_1.png)
+![png](reguninfprior_files/reguninfprior_28_1.png)
 
 
 
@@ -293,7 +304,7 @@ plt.xlim(0, 1000)
 
 
 
-![png](reguninfprior_files/reguninfprior_26_1.png)
+![png](reguninfprior_files/reguninfprior_29_1.png)
 
 
 
@@ -313,7 +324,7 @@ plt.xlim(0, 1000)
 
 
 
-![png](reguninfprior_files/reguninfprior_27_1.png)
+![png](reguninfprior_files/reguninfprior_30_1.png)
 
 
 Trying to run multiple chains in this fashion to get Geln-Rubun triggers are bug in python's pickling, so we will have to do this serially for now.
@@ -333,10 +344,10 @@ with model1:
 
     PicklingError                             Traceback (most recent call last)
 
-    <ipython-input-60-6c0a5e50edb6> in <module>()
-          1 with model1:
-          2     stepper=pm.Metropolis()
-    ----> 3     tracem2 = pm.sample(40000, step=stepper, njobs=2)
+    <ipython-input-19-c58da2c0c0ad> in <module>()
+          2 with model1:
+          3     stepper=pm.Metropolis()
+    ----> 4     tracem2 = pm.sample(40000, step=stepper, njobs=2)
     
 
     //anaconda/envs/py35/lib/python3.5/site-packages/pymc3/sampling.py in sample(draws, step, init, n_init, start, trace, chain, njobs, tune, progressbar, model, random_seed)
@@ -403,12 +414,80 @@ with model1:
         373             self._send = send
 
 
-    PicklingError: Can't pickle <function <lambda> at 0x118e56840>: attribute lookup <lambda> on __main__ failed
+    PicklingError: Can't pickle <function <lambda> at 0x11b4a5ae8>: attribute lookup <lambda> on __main__ failed
 
 
 
 
 ```python
+xdata_oos=np.arange(-20, 120,1) #out of sample
+xdata_shared.set_value(xdata_oos)
+```
+
+
+
+
+```python
+ppc = pm.sample_ppc(tm1, model=model1, samples=500)
+```
+
+
+    100%|██████████| 500/500 [00:05<00:00, 95.90it/s]     | 1/500 [00:00<01:15,  6.57it/s]
+
+
+
+
+```python
+ppc['y_est'].shape, xdata.shape, xdata_oos.shape
+```
+
+
+
+
+
+    ((500, 140), (20,), (140,))
+
+
+
+
+
+```python
+yppc = ppc['y_est'].mean(axis=0)
+yppcstd=ppc['y_est'].std(axis=0)
 
 ```
+
+
+
+
+
+    (140,)
+
+
+
+
+
+```python
+plt.plot(xdata, ydata,'o');
+intercept, beta = tm1['intercept'][:,None], tm1['beta'][:,None]
+yfit = intercept + beta * xdata_oos
+mu = yfit.mean(0)
+sig = 2 * yfit.std(0)
+plt.plot(xdata_oos, mu, '-k')
+plt.fill_between(xdata_oos, mu - sig, mu + sig, color='lightgray')
+plt.plot(xdata_oos, yppc, color="green")
+plt.fill_between(xdata_oos, yppc - 2*yppcstd, yppc + 2*yppcstd, color='green', alpha=0.3)
+
+```
+
+
+
+
+
+    <matplotlib.collections.PolyCollection at 0x11ba730f0>
+
+
+
+
+![png](reguninfprior_files/reguninfprior_37_1.png)
 
