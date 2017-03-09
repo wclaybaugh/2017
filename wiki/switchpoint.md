@@ -3,7 +3,18 @@ title: Imputation and Convergence
 shorttitle: switchpoint
 notebook: switchpoint.ipynb
 noline: 1
-summary: "We use a switchpoint model from Fonnesbeck's Bios 8366 course to illustrate both various formal convergence test and data imputation using the posterior predictives
+summary: "We use a switchpoint model from Fonnesbeck's Bios 8366 course to illustrate both various formal convergence test and data imputation using the posterior predictives"
+keywords: ['switchpoint', "'bayesian'", "'mcmc'", "'mcmc engineering'", "'formal tests'", "'imputation'"]
+layout: wiki
+---
+{% assign links = site.data.wikilinks %}
+
+
+## Contents
+{:.no_toc}
+* 
+{: toc}
+
 
 
 
@@ -24,8 +35,6 @@ sns.set_context("poster")
 ```
 
 
-    //anaconda/envs/py35/lib/python3.5/site-packages/matplotlib/__init__.py:872: UserWarning: axes.color_cycle is deprecated and replaced with axes.prop_cycle; please use the latter.
-      warnings.warn(self.msg_depr % (key, alt_key))
 
 
 ## A switchpoint model
@@ -67,11 +76,11 @@ One can see the swtich roughly in the picture above.
 We'll assume a Poisson model for the mine disasters; appropriate because the counts are low.
 
 $$
-y \\vert \\tau, \\lambda_1, \\lambda_2 \\sim Poisson(r_t)\\\\
-r_t = \\lambda_1 \\,{\\rm if}\\, t < \\tau \\,{\\rm else}\\, \\lambda_2 \\,{\\rm for}\\, t \\in [t_l, t_h]\\\\
-\\tau \\sim DiscreteUniform(t_l, t_h)\\\\
-\\lambda_1 \\sim Exp(a)\\\\
-\\lambda_2 \\sim Exp(b)\\\\
+y \vert \tau, \lambda_1, \lambda_2 \sim Poisson(r_t)\\
+r_t = \lambda_1 \,{\rm if}\, t < \tau \,{\rm else}\, \lambda_2 \,{\rm for}\, t \in [t_l, t_h]\\
+\tau \sim DiscreteUniform(t_l, t_h)\\
+\lambda_1 \sim Exp(a)\\
+\lambda_2 \sim Exp(b)\\
 $$
 
 The rate parameter varies before and after the switchpoint, which itseld has a discrete-uniform prior on it. Rate parameters get exponential priors.
@@ -481,7 +490,7 @@ plt.tight_layout()
 
 The gewecke test tests that the difference of means of chain-parts written as a Z-score oscilates between 1 and -1
 
-$$\\vert \\mu_{\\theta_1}  - \\mu_{\\theta_2}  \\vert < 2 \\sigma_{\\theta_1 - \\theta_2} $$
+$$\vert \mu_{\theta_1}  - \mu_{\theta_2}  \vert < 2 \sigma_{\theta_1 - \theta_2} $$
 
 
 
@@ -615,7 +624,7 @@ plt.xlim(0, 1000)
 
 For this test, which calculates 
 
-$$\\hat{R} = \\sqrt{\\frac{\\hat{Var}(\\theta)}{w}}$$
+$$\hat{R} = \sqrt{\frac{\hat{Var}(\theta)}{w}}$$
 
 we need more than 1-chain. This is done through `njobs=4`. See the trace below:
 
@@ -783,13 +792,7 @@ for obs, s, ax in zip(disasters_data, sim['disasters'].T, axes):
 
 
 
-![png](switchpoint_files/switchpoint_64_1.png)"
-layout: wiki
----
-{% assign links = site.data.wikilinks %}
+![png](switchpoint_files/switchpoint_64_1.png)
 
-## Contents
-{:.no_toc}
-* 
-{: toc}
+
 
