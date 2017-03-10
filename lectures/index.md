@@ -24,3 +24,4 @@ layout: "default"
 - [Lab 6](lab6.html): Tetchy Gibbs and Rat Tumor Hierarchical Model
 - [Lecture 13](lecture13.html): Bayesian Regression and pymc3
 - [Lecture 14](lecture14.html): pymc3 and MCMC convergence
+- [Lab 7](lab7.html): pymc with bioassay and rat tumors

@@ -417,6 +417,8 @@ with model1:
     PicklingError: Can't pickle <function <lambda> at 0x11b4a5ae8>: attribute lookup <lambda> on __main__ failed
 
 
+## Getting the posterior predictive
+
 
 
 ```python
@@ -489,5 +491,5 @@ plt.fill_between(xdata_oos, yppc - 2*yppcstd, yppc + 2*yppcstd, color='green', a
 
 
 
-![png](reguninfprior_files/reguninfprior_37_1.png)
+![png](reguninfprior_files/reguninfprior_38_1.png)
 
