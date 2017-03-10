@@ -290,7 +290,7 @@ print(map_estimate)
 
 In Powell's method we move along one orthogonal base direction at at time, needing to minimize only in one dimension, using methods that do not require a derivative to be calculated.
 
-<tr><td><img src="files/powell.png", width=300, height=300></td><td><tr>
+![](images/powell.png)
 
 ### Sampling
 
