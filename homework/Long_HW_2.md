@@ -20,13 +20,13 @@ layout: wiki
 
 ## Problem 1. The Ising Model with Metropolis and Gibbs
 
-The true power of the Monte Carlo method becomes apparent when we deal with integrals over many dimensions, such as those often found in statistical physics. In this exercise we consider the 2-D Ising model, which is a very idealized representation of a ferromagnetic metal. The model consists of an $L\times L$ lattice of spins  $s_{ij}$ (with $i, j = 1, \ldots , L$) each of which can take only two values, up (s$_{ij}$ = 1) and down (s$_{ij}$ = -1). The total energy for the system is taken to be:
+The true power of the Monte Carlo method becomes apparent when we deal with integrals over many dimensions, such as those often found in statistical physics. In this exercise we consider the 2-D Ising model, which is a very idealized representation of a ferromagnetic metal. The model consists of an $L\times L$ lattice of spins  $s_{ij}$ (with $i, j = 1, \ldots , L$) each of which can take only two values, up ($s_{ij}$ = 1) and down ($s_{ij}$ = -1). The total energy for the system is taken to be:
 
 $$
 E = -\sum_{ij} \frac{1}{2} s_{ij}  \left[ s_{\rm{up}(ij)} + s_{\rm{down}(ij)} + s_{\rm{left}(ij)} + s_{\rm{right}(ij)} \right],  
 $$
 
-where s$_{\rm{up}(ij)}$ denotes the spin immediately above s$_{ij}$ in the grid, s$_{\rm{right}(ij)}$ the spin immediately to its right, and so on. We see that configurations in which nearby spins are aligned are energetically preferred. When the system is in thermal equilibrium, at the temperature $T$, the probability of finding it in a given configuration $\{s\}=(s_{11}, s_{12}, \ldots)$ of the spins is given by the Boltzmann factor,
+where $s_{\rm{up}(ij)}$ denotes the spin immediately above $s_{ij}$ in the grid, $s_{\rm{right}(ij)}$ the spin immediately to its right, and so on. We see that configurations in which nearby spins are aligned are energetically preferred. When the system is in thermal equilibrium, at the temperature $T$, the probability of finding it in a given configuration $\{s\}=(s_{11}, s_{12}, \ldots)$ of the spins is given by the Boltzmann factor,
 
 $$W(\{ {s} \}) = Z^{-1} e^{ -\beta E[ \{ s \} ] }, $$
 
@@ -49,7 +49,7 @@ The Metropolis algorithm generates a sequence of configurations that have approx
 
 * We start with a completely random spin configuration $\{s \}$ (each spin chosen to be up or down with 50% probability).
 
-* To generate the next configuration in the sequence, we select a point $(i, j$) in the lattice, and we compute the energy change $\Delta E$ by flipping the corresponding spin, s$_{ij}$,
+* To generate the next configuration in the sequence, we select a point $(i, j$) in the lattice, and we compute the energy change $\Delta E$ by flipping the corresponding spin, $s_{ij}$,
 
 $$
 \Delta E = 2s_{ij}  \left[ s_{\rm{up}(ij)} + s_{\rm{down}(ij)} + s_{\rm{left}(ij)} + s_{\rm{right}(ij)} \right]  
