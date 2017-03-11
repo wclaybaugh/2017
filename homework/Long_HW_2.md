@@ -28,12 +28,12 @@ $$
 
 where s$_{\rm{up}(ij)}$ denotes the spin immediately above s$_{ij}$ in the grid, s$_{\rm{right}(ij)}$ the spin immediately to its right, and so on. We see that configurations in which nearby spins are aligned are energetically preferred. When the system is in thermal equilibrium, at the temperature $T$, the probability of finding it in a given configuration $\{s\}=(s_{11}, s_{12}, \ldots)$ of the spins is given by the Boltzmann factor,
 
-$$W(\{{s} \}) = Z^{-1} e^{ -\beta E[ \{ s \} ] }, $$
+$$W(\{ {s} \}) = Z^{-1} e^{ -\beta E[ \{ s \} ] }, $$
 
 where $Z$ is given by the sum of the exponential over all possible spin configurations, and where $\beta$ is the inverse temperature (measured in units of the Boltzmann constant $k_B$). The thermal equilibrium values of all the macroscopic quantities for the system (such as the magnetization, $M(\{s\}) =\sum_{ij} s_{ij}$ are found by averaging over all spin configurations, weighted by $W$. For instance,
 
 $$
-\left< M \right> := \sum_{\{s\}} W(\{{s} \})M(\{s\})
+\left< M \right> := \sum_{\{s\}} W(\{ {s} \})M(\{s\})
 $$ 
 
 Thus:
