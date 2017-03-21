@@ -134,3 +134,8 @@ Lecture 14: Gibbs and Hierarchical Models
 Lab 7: Bioassay and tumors in pymc3
 
 [Notes and Material](lectures/lab7.html)
+
+### Week 8
+
+Lecture 15: Recap and Dataq Aug to HMC
+[Slides, Notes, and Readings](lectures/lecture15.html)
