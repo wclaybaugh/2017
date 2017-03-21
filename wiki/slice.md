@@ -521,10 +521,10 @@ With all that background, our univariate slice sampling algorithm should be clea
 
 Let's look a bit more closely at Data Augmentation and it's relationship to Slice Sampling.  If you recall the exact procedure for data augmentation is as follows. 
 
-You're given $ X $ from which you wish to sample.  Sampling from them is difficult but with the addition of some auxilliary variables $ Y $ you're able to sample from the joint probability p(X,Y) so that :
+You're given $ X $ from which you wish to sample.  Sampling from them is difficult but with the addition of some auxilliary variables $ Y $ you're able to sample from the joint probability $p(X,Y)$ so that :
 
-1.  the conditionals X \vert Y and Y \vert X are easy to sample 
-2.  the marginal p(X) from the joint p(X,Y) matches your target distribution.
+1.  the conditionals $X \vert Y$ and $Y \vert X$ are easy to sample 
+2.  the marginal $p(X)$ from the joint $p(X,Y)$ matches your target distribution.
 3.  You can then use Gibbs Sampling to generate samples for the joint distribution and keep the X samples 
 
 
@@ -533,8 +533,8 @@ Now let's look more closely at our slice sampling procedure.
 * We're given X
 * We add an auxiliary variable Y 
 * The marginals are easy to sample
-   * Y \vert X ~ Unif(0,f(x))
-   * X \vert Y = 1 if f(x) > y and 0 otherwise
+   * $Y \vert X ~ Unif(0,f(x))]$
+   * $X \vert Y = 1$ if $f(x) > y$ and 0 otherwise
 * the marginal of X matches our target distribution by construction
 * we use Gibbs sampling to generate our samples
 
