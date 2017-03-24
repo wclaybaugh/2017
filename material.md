@@ -142,3 +142,7 @@ Lecture 15: Recap and Dataq Aug to HMC
 
 Lecture 16: Recap and Slice and HMC
 [Slides, Notes, and Readings](lectures/lecture16.html)
+
+Lab 8: pymc, da, theano, slice
+
+[Notes and Material](lectures/lab8.html)
