@@ -1,5 +1,5 @@
 ---
-title: 
+title: Lab 8 - Data Augmentation and Slice Sampling
 shorttitle: LabSliceandDA
 notebook: LabSliceandDA.ipynb
 noline: 1
@@ -7,6 +7,7 @@ summary: ""
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
+
 
 
 ```python
@@ -26,8 +27,6 @@ sns.set_context("poster")
 import pymc3 as pm
 ```
 
-
-# Lab 8 -- Data Augmentation and Slice Sampling
 
 ## Data Augmentation
 
