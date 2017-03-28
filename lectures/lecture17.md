@@ -1,6 +1,6 @@
 ---
 shorttitle: "Lecture17"
-title: "Lecture 17: HMC, and tetchy hierarchicals
+title: "Lecture 17: HMC, and tetchy hierarchicals"
 layout: "lecture"
 noline: 1
 notes: ['hmcexplore', 'gelmanschools', 'speedoflight']
