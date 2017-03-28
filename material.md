@@ -146,3 +146,8 @@ Lecture 16: Recap and Slice and HMC
 Lab 8: pymc, da, theano, slice
 
 [Notes and Material](lectures/lab8.html)
+
+### Week 9
+
+Lecture 17: HMC, and tetchy hierarchicals
+[Slides, Notes, and Readings](lectures/lecture17.html)
