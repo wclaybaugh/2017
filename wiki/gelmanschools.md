@@ -406,7 +406,7 @@ plt.axvline(5000, color="r")
 ![png](gelmanschools_files/gelmanschools_34_1.png)
 
 
-And the effective step sized have improved as well
+And the effective number of iterations hs improved as well:
 
 
 

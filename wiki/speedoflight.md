@@ -173,7 +173,7 @@ Let us engage in tamping down our notation a bit. We Usually write, for the post
 
 $$p(\{y^\*\}) = \int p(\{y^\*\} \vert \theta) p(\theta \vert \cal{D}) d\theta$$
 
-To avoid confusion with observed data $\cal{D} = \{y\}$, we define $\{y_{r}\}$ as the replicated data, the data we would see tomorrow if the experiment that produced $\{y\}$ today were replicated with the same model and same value of $\theta$ that produced todays data. Since-ofcourse we only have a posterior inference for $\theta$, one can think of $y_r$ as simply coming from the posterior predictive, with the caveat that if there are covariates $\{x^{\*}\}$, then $\{y_r\}$ is calculated at those covariates only: in other words we are repredicting at the covariates which gave us the current data.
+To avoid confusion with observed data $\cal{D} = \{y\}$, we define $\{y_{r}\}$ as the replicated data, the data we would see tomorrow if the experiment that produced $\{y\}$ today were replicated with the same model and same value of $\theta$ that produced todays data. Since of course we only have a posterior inference for $\theta$, one can think of $y_r$ as simply coming from the posterior predictive, with the caveat that if there are covariates $\{x^{\*}\}$, then $\{y_r\}$ is calculated at those covariates only: in other words we are repredicting at the covariates which gave us the current data.
 
 Our usual way to sample from the posterior predictive has been to draw one $y$ for each $\theta$. In this way we are sampling from the joint $(y_r, \theta )$ distribution. To get us the posterior predictive distribution we have ignored the $\theta$ samples so as to marginalize and carry out the above integral.
 
@@ -183,7 +183,7 @@ But this is a place where we will diverge from this prescription. We'll, so-to-s
 
 We might wish to compute a test statistic from the posterior predictive. Say for example, we wish to talk about the minimum value of the posterior predictive.
 
-One way to do this is to replicate the posterior predictive multiple times. We show that below:
+The way to do this is to replicate the posterior predictive multiple times. We show that below:
 
 
 
@@ -270,6 +270,7 @@ fig, axes = plt.subplots(nrows=5, ncols=4,
 for ax, s in zip(axes.ravel(), sarrays):
     ax.hist(s, bins=15, histtype='stepfilled', color='r', alpha=.3, ec='none')
     ax.set_yticks([]);
+    ax.set_xlim([-50, 40])
 ```
 
 
