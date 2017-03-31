@@ -144,10 +144,15 @@ Lecture 16: Recap and Slice and HMC
 [Slides, Notes, and Readings](lectures/lecture16.html)
 
 Lab 8: pymc, da, theano, slice
-
 [Notes and Material](lectures/lab8.html)
 
 ### Week 9
 
 Lecture 17: HMC, and tetchy hierarchicals
 [Slides, Notes, and Readings](lectures/lecture17.html)
+
+Lecture 18: HMC tuning, glm, Model checking
+[Slides, Notes, and Readings](lectures/lecture18.html)
+
+Lab 9: Gelman Schools, homework
+[Notes and Material](lectures/lab9.html)

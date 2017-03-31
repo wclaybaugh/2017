@@ -30,3 +30,4 @@ layout: "default"
 - [Lab 8](lab8.html): pymc, da, theano, slice
 - [Lecture 17](lecture17.html): HMC, and tetchy hierarchicals
 - [Lecture 18](lecture18.html): HMC tuning, glm, Model checking
+- [Lab 9](lab9.html): Gelman Schools and Homework
