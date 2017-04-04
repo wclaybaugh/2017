@@ -309,7 +309,7 @@ This can be useful in directly summarizing discrepancies between model and data.
 
 ### Classical p-values. 
 
-The classical p-value for the test statistic T(\{y\}) is given by
+The classical p-value for the test statistic $T(\{y\})$ is given by
 
 $$p_C = P(T(\{y_r\}) \ge T(\{y\}) \vert \theta)$$
 
@@ -340,7 +340,7 @@ Well, these integrals may seem complex, but sampling comes to our rescue. We kno
 The p-values correspond to tail-probability, the probabulity that the statistic is more extreme in the posterior predictive distribution than in the data. If the value of this statistic, also called the discrepancy is close to (0) 1, then you are saying that the posterior-predictive is always (less) more extreme. This is what happened with the minima. you could think of the "data-arrived" statistic as a sort of null value, with calues close to 0 or 1 as some sort of rejection criterion. But dont just go all nonsensical at 0.05 :-)
 
 Gelman:
->A model is suspect if a discrepancy is of practical importance and its observed value has a tail-area probability near 0 or 1, indicating that the observed pattern would be unlikely to be seen in replications of the data if the model were true. An extreme p-value implies that the model cannot be expected to capture this aspect of the data. A p-value is a posterior prob- ability and can therefore be interpreted directly—although not as Pr(model is true | data). Major failures of the model, typically corresponding to extreme tail-area probabilities (less than 0.01 or more than 0.99), can be addressed by expanding the model appropriately. Lesser failures might also suggest model improvements or might be ignored in the short term if the failure appears not to affect the main inferences. In some cases, even extreme p-values may be ignored if the misfit of the model is substantively small compared to varia- tion within the model.
+>A model is suspect if a discrepancy is of practical importance and its observed value has a tail-area probability near 0 or 1, indicating that the observed pattern would be unlikely to be seen in replications of the data if the model were true. An extreme p-value implies that the model cannot be expected to capture this aspect of the data. A p-value is a posterior prob- ability and can therefore be interpreted directly—although not as Pr(model is true  \vert  data). Major failures of the model, typically corresponding to extreme tail-area probabilities (less than 0.01 or more than 0.99), can be addressed by expanding the model appropriately. Lesser failures might also suggest model improvements or might be ignored in the short term if the failure appears not to affect the main inferences. In some cases, even extreme p-values may be ignored if the misfit of the model is substantively small compared to varia- tion within the model.
 
 >Finding an extreme p-value and thus ‘rejecting’ a model is never the end of an analysis; the departures of the test quantity in question from its posterior predictive distribution will often suggest improvements of the model or places to check the data, as in the speed of light example. Moreover, even when the current model seems appropriate for drawing inferences (in that no unusual deviations between the model and the data are found), the next scientific step will often be a more rigorous experiment incorporating additional factors, thereby providing better data. 
 
@@ -433,7 +433,7 @@ np.mean(ppvars2>=np.var(light_speed, ddof=1))
 
 ### A measure of symmetry
 
-We can construct an outlier-resistant model-adeqacy check by seeing if the model is adequate but for extreme tails. Here is a test quantity sensitive to asymmetry in the center of the distribution:
+We can construct an outlier-resistant model-adequacy check by seeing if the model is adequate but for extreme tails. Here is a test quantity sensitive to asymmetry in the center of the distribution:
 
 $$T(\{y\},\theta)= \vert y(61) − \theta \vert − \vert y(6) − \theta \vert.$$
 
@@ -460,13 +460,15 @@ plt.scatter(tee_data, tee_ppc);
 plt.plot([-10, 12],[-10,12]);
 plt.xlim([-10,12])
 plt.ylim([-10,12])
+plt.xlabel("data")
+plt.ylabel("ppc")
 ```
 
 
 
 
 
-    (-10, 12)
+    <matplotlib.text.Text at 0x122c50240>
 
 
 
