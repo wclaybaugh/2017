@@ -156,3 +156,11 @@ Lecture 18: HMC tuning, glm, Model checking
 
 Lab 9: Gelman Schools, homework
 [Notes and Material](lectures/lab9.html)
+
+### Week10
+
+Lecture 19: Model Checking, glms
+[Slides, Notes, and Readings](lectures/lecture19.html)
+
+Lecture 20: Model Comparison, glms
+[Slides, Notes, and Readings](lectures/lecture20.html)
