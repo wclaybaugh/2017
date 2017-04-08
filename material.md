@@ -164,3 +164,6 @@ Lecture 19: Model Checking, glms
 
 Lecture 20: Model Comparison, glms
 [Slides, Notes, and Readings](lectures/lecture20.html)
+
+Lab 10: Prosocial Chimps Bernoulli glm
+[Notes and Material](lectures/lab10.html)

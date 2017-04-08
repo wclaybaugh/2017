@@ -33,3 +33,4 @@ layout: "default"
 - [Lab 9](lab9.html): Gelman Schools and Homework
 - [Lecture 19](lecture19.html): glm, Model checking
 - [Lecture 20](lecture20.html): glm, Model comparison
+- [Lab 10](lab10.html): Prosocial Chimps glm
