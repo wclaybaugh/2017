@@ -1,5 +1,5 @@
 ---
-title: Poisson Regression: tools on islands
+title: Poisson Regression -  tools on islands, part 1
 shorttitle: Islands1
 notebook: Islands1.ipynb
 noline: 1
