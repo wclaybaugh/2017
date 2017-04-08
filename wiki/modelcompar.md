@@ -1,5 +1,5 @@
 ---
-title: Model Comparison: in sample measures
+title: Model Comparison using in-sample information criteria
 shorttitle: modelcompar
 notebook: modelcompar.ipynb
 noline: 1
