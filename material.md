@@ -157,7 +157,7 @@ Lecture 18: HMC tuning, glm, Model checking
 Lab 9: Gelman Schools, homework
 [Notes and Material](lectures/lab9.html)
 
-### Week10
+### Week 10
 
 Lecture 19: Model Checking, glms
 [Slides, Notes, and Readings](lectures/lecture19.html)
@@ -167,3 +167,8 @@ Lecture 20: Model Comparison, glms
 
 Lab 10: Prosocial Chimps Bernoulli glm
 [Notes and Material](lectures/lab10.html)
+
+### Week 11
+
+Lecture 21: Utility, Model Comparison
+[Slides, Notes, and Readings](lectures/lecture21.html)
