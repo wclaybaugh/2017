@@ -35,3 +35,4 @@ layout: "default"
 - [Lecture 20](lecture20.html): glm, Model comparison
 - [Lab 10](lab10.html): Prosocial Chimps glm
 - [Lecture 21](lecture21.html): Utility, Model comparison
+- [Lecture 22](lecture22.html): Cross-Validation, Mixture Models

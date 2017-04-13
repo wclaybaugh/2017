@@ -172,3 +172,6 @@ Lab 10: Prosocial Chimps Bernoulli glm
 
 Lecture 21: Utility, Model Comparison
 [Slides, Notes, and Readings](lectures/lecture21.html)
+
+Lecture 22: x-val, Mixture Models
+[Slides, Notes, and Readings](lectures/lecture22.html)
