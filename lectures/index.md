@@ -36,3 +36,4 @@ layout: "default"
 - [Lab 10](lab10.html): Prosocial Chimps glm
 - [Lecture 21](lecture21.html): Utility, Model comparison
 - [Lecture 22](lecture22.html): Cross-Validation, Mixture Models
+- [Lab 11](lab11.html): Semi-Supervised learning and log-sum-exp marginals

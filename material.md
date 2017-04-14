@@ -175,3 +175,6 @@ Lecture 21: Utility, Model Comparison
 
 Lecture 22: x-val, Mixture Models
 [Slides, Notes, and Readings](lectures/lecture22.html)
+
+Lab11: Semi-Supervised learning and log-sum-exp marginals
+[Notes and Material](lectures/lab11.html)

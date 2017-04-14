@@ -243,6 +243,13 @@ sns.distplot(data, bins=50);
 ![png](mixtures_and_mcmc_files/mixtures_and_mcmc_14_1.png)
 
 
+
+
+```python
+np.savetxt("data/3g.dat", data)
+```
+
+
 In a similar way to before, we set up our sampling. The main difference is the direct use of the Dirichlet as a prior.
 
 
@@ -296,7 +303,7 @@ pm.traceplot(trace_mof);
 
 
 
-![png](mixtures_and_mcmc_files/mixtures_and_mcmc_18_0.png)
+![png](mixtures_and_mcmc_files/mixtures_and_mcmc_19_0.png)
 
 
 
@@ -307,7 +314,7 @@ pm.autocorrplot(trace_mof, varnames=['means', 'p', 'sds']);
 
 
 
-![png](mixtures_and_mcmc_files/mixtures_and_mcmc_19_0.png)
+![png](mixtures_and_mcmc_files/mixtures_and_mcmc_20_0.png)
 
 
 ## Problems with clusters and sampling
@@ -402,7 +409,7 @@ pm.traceplot(trace_mof2);
 
 
 
-![png](mixtures_and_mcmc_files/mixtures_and_mcmc_25_0.png)
+![png](mixtures_and_mcmc_files/mixtures_and_mcmc_26_0.png)
 
 
 
@@ -413,7 +420,7 @@ pm.autocorrplot(trace_mof2, varnames=["means", "p", "sds"]);
 
 
 
-![png](mixtures_and_mcmc_files/mixtures_and_mcmc_26_0.png)
+![png](mixtures_and_mcmc_files/mixtures_and_mcmc_27_0.png)
 
 
 
@@ -468,7 +475,7 @@ pm.traceplot(trace_mof21);
 
 
 
-![png](mixtures_and_mcmc_files/mixtures_and_mcmc_30_0.png)
+![png](mixtures_and_mcmc_files/mixtures_and_mcmc_31_0.png)
 
 
 
@@ -479,7 +486,7 @@ pm.autocorrplot(trace_mof21, varnames=["means", "p", "sds"]);
 
 
 
-![png](mixtures_and_mcmc_files/mixtures_and_mcmc_31_0.png)
+![png](mixtures_and_mcmc_files/mixtures_and_mcmc_32_0.png)
 
 
 We do much better now
@@ -647,7 +654,7 @@ sns.kdeplot(df.Weight, df.Height)
 
 
 
-![png](mixtures_and_mcmc_files/mixtures_and_mcmc_37_3.png)
+![png](mixtures_and_mcmc_files/mixtures_and_mcmc_38_3.png)
 
 
 To keep things simple, we'll keep to one dimension by sticking with the weight marginal. Plotting it, there definitely seems to be a double humped distribution:
@@ -665,7 +672,7 @@ plt.hist(df.Weight, bins=100, alpha=0.2, normed=True);
 
 
 
-![png](mixtures_and_mcmc_files/mixtures_and_mcmc_39_1.png)
+![png](mixtures_and_mcmc_files/mixtures_and_mcmc_40_1.png)
 
 
 We do the train-test split. Notice we will keep a very small number of points in the training set.
@@ -994,7 +1001,7 @@ pm.traceplot(trace_cm1);
 
 
 
-![png](mixtures_and_mcmc_files/mixtures_and_mcmc_46_0.png)
+![png](mixtures_and_mcmc_files/mixtures_and_mcmc_47_0.png)
 
 
 
@@ -1005,7 +1012,7 @@ pm.autocorrplot(trace_cm1);
 
 
 
-![png](mixtures_and_mcmc_files/mixtures_and_mcmc_47_0.png)
+![png](mixtures_and_mcmc_files/mixtures_and_mcmc_48_0.png)
 
 
 
@@ -1050,7 +1057,7 @@ plt.title("Visualizing Clusters using posterior-mean parameters")
 
 
 
-![png](mixtures_and_mcmc_files/mixtures_and_mcmc_48_1.png)
+![png](mixtures_and_mcmc_files/mixtures_and_mcmc_49_1.png)
 
 
 We use the $p(x \vert z)$ to do our classification. What we really want is $p(z \vert x)$, but we can use bayes theorem to inver this, as shown in the diagram below.
@@ -3806,7 +3813,7 @@ pm.traceplot(trace_cm2);
     [A
 
 
-![png](mixtures_and_mcmc_files/mixtures_and_mcmc_57_1.png)
+![png](mixtures_and_mcmc_files/mixtures_and_mcmc_58_1.png)
 
 
 
@@ -3817,7 +3824,7 @@ pm.autocorrplot(trace_cm2, varnames=['centers', 'p', 'sds']);
 
 
 
-![png](mixtures_and_mcmc_files/mixtures_and_mcmc_58_0.png)
+![png](mixtures_and_mcmc_files/mixtures_and_mcmc_59_0.png)
 
 
 There is still quite a bit of autocorrelation and we might want to sample longer. But let us see how we did.
@@ -3884,5 +3891,5 @@ plt.xlabel("value of data point")
 
 
 
-![png](mixtures_and_mcmc_files/mixtures_and_mcmc_64_1.png)
+![png](mixtures_and_mcmc_files/mixtures_and_mcmc_65_1.png)
 
