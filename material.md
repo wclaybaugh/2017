@@ -178,3 +178,8 @@ Lecture 22: x-val, Mixture Models
 
 Lab11: Semi-Supervised learning and log-sum-exp marginals
 [Notes and Material](lectures/lab11.html)
+
+### Week 12
+
+Lecture 23: Expectation Maximization
+[Slides, Notes, and Readings](lectures/lecture23.html)
