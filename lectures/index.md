@@ -38,3 +38,4 @@ layout: "default"
 - [Lecture 22](lecture22.html): Cross-Validation, Mixture Models
 - [Lab 11](lab11.html): Semi-Supervised learning and log-sum-exp marginals
 - [Lecture 23](lecture23.html): Expectation Maximization
+- [Lecture 24](lecture24.html): Expectation Maximization and Variational Inference

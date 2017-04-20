@@ -183,3 +183,6 @@ Lab11: Semi-Supervised learning and log-sum-exp marginals
 
 Lecture 23: Expectation Maximization
 [Slides, Notes, and Readings](lectures/lecture23.html)
+
+Lecture 24: Expectation Maximization and Variational Inference
+[Slides, Notes, and Readings](lectures/lecture24.html)
