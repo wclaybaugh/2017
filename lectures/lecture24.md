@@ -10,3 +10,7 @@ notes: ['EM', 'VI', 'advi']
 
 - [PDF](../slides/lecture24.pdf)
 
+## Readings
+
+- [Tutorial](https://arxiv.org/pdf/1601.00670.pdf)
+- [ADVI](https://arxiv.org/pdf/1603.00788.pdf)
