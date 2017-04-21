@@ -1,5 +1,5 @@
 ---
-title: 
+title: Correlations
 shorttitle: corr
 notebook: corr.ipynb
 noline: 1
@@ -7,7 +7,6 @@ summary: ""
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
-## Correlations
 
 
 
