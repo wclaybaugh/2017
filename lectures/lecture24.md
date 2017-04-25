@@ -1,6 +1,6 @@
 ---
 shorttitle: "Lecture24"
-title: "Lecture 22: EM and Variational inference"
+title: "Lecture 24: EM and Variational inference"
 layout: "lecture"
 noline: 1
 notes: ['EM', 'VI', 'advi']

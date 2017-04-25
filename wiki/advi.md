@@ -1,5 +1,5 @@
 ---
-title: 
+title: ADVI
 shorttitle: advi
 notebook: advi.ipynb
 noline: 1
@@ -7,7 +7,6 @@ summary: ""
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
-## ADVI
 
 
 

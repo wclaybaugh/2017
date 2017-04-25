@@ -186,3 +186,8 @@ Lecture 23: Expectation Maximization
 
 Lecture 24: Expectation Maximization and Variational Inference
 [Slides, Notes, and Readings](lectures/lecture24.html)
+
+### Week 13
+
+Lecture 25: Gaussian Processes
+[Slides, Notes, and Readings](lectures/lecture25.html)
