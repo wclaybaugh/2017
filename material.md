@@ -194,3 +194,5 @@ Lab12: Correlations and Mixtures and ADVI
 
 Lecture 25: Gaussian Processes
 [Slides, Notes, and Readings](lectures/lecture25.html)
+Lecture 26: Wrapup
+[Slides, Notes, and Readings](lectures/lecture26.html)
