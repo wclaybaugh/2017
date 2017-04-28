@@ -8,6 +8,11 @@ layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
 
+## Contents
+{:.no_toc}
+*  
+{: toc}
+
 We now do a study of learning mixture models with MCMC. We have already done this in the case of the Zero-Inflated Poisson Model, and will stick to Gaussian Mixture models for now.
 
 

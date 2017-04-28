@@ -4,10 +4,17 @@ shorttitle: gpcorr
 notebook: gpcorr.ipynb
 noline: 1
 summary: ""
+keywords: ['normal distribution', 'multivariate normal', 'oceanic tools', 'correlation', 'covariance', 'posterior', 'posterior predictive', 'gaussian process', 'poisson regression']
 data: ['data/Kline2.csv', 'data/distmatrix.csv']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
+
+## Contents
+{:.no_toc}
+*  
+{: toc}
+
 
 
 

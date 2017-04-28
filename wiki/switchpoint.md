@@ -4,7 +4,7 @@ shorttitle: switchpoint
 notebook: switchpoint.ipynb
 noline: 1
 summary: "We use a switchpoint model from Fonnesbeck's Bios 8366 course to illustrate both various formal convergence test and data imputation using the posterior predictives"
-keywords: ['switchpoint', "'bayesian'", "'mcmc'", "'mcmc engineering'", "'formal tests'", "'imputation'"]
+keywords: ['switchpoint', 'bayesian', 'mcmc', 'mcmc engineering', 'formal tests', 'imputation']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}

@@ -4,9 +4,16 @@ shorttitle: gp3
 notebook: gp3.ipynb
 noline: 1
 summary: ""
+keywords: ['normal distribution', 'multivariate normal', 'marginal', 'conditional', 'priors', 'correlation', 'covariance', 'kernel', 'posterior', 'posterior predictive', 'gaussian process', 'regression', 'empirical bayes', 'type-2 mle', 'pymc3', 'inference']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
+
+## Contents
+{:.no_toc}
+*  
+{: toc}
+
 
 
 

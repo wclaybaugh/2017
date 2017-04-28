@@ -4,9 +4,16 @@ shorttitle: BriefIntrotoTheano
 notebook: BriefIntrotoTheano.ipynb
 noline: 1
 summary: ""
+keywords: ['theano']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
+
+## Contents
+{:.no_toc}
+*  
+{: toc}
+
 
 ## Introduction to Mathematical Expressions with Theano
 

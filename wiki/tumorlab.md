@@ -4,7 +4,7 @@ shorttitle: tumorlab
 notebook: tumorlab.ipynb
 noline: 1
 summary: "A full bayesian treatment of the rat tumor hierarchical model, including a discussion on the choice of hyperprior, and posterior predictions for both an existing $\\theta_i$ and for a new $\\theta_{71}$."
-keywords: ['rat tumors', 'mcmc', 'gibbs sampler', 'hierarchical model', 'full bayes', 'hyperprior', 'noninformative prior', 'bayesian updating', 'bayesian', 'parameter predictive', 'beta', 'binomial', 'beta-binomial']
+keywords: ['rat tumors', 'mcmc', 'gibbs sampler', 'hierarchical model', 'full bayes', 'hyperprior', 'noninformative prior', 'bayesian updating', 'bayesian', 'posterior', 'posterior predictive', 'beta', 'binomial', 'beta-binomial']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}

@@ -8,6 +8,11 @@ layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
 
+## Contents
+{:.no_toc}
+*  
+{: toc}
+
 This notebook is taken almost verbatim from the pymc3 documentation. Its a very good illustration of what needs to be done to
 
 - marginalize over discretes for ADVI

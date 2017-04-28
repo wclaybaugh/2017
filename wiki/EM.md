@@ -4,9 +4,16 @@ shorttitle: EM
 notebook: EM.ipynb
 noline: 1
 summary: ""
+keywords: ['maximum likelihood', 'mixture model', 'elbo', 'full-data likelihood', 'x-likelihood', 'latent variables', 'log-likelihood', 'training set', 'normal distribution', 'z-posterior']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
+
+## Contents
+{:.no_toc}
+*  
+{: toc}
+
 
 
 

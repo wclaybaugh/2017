@@ -4,9 +4,16 @@ shorttitle: Islands1
 notebook: Islands1.ipynb
 noline: 1
 summary: ""
+keywords: ['poisson distribution', 'poisson regression', 'glm', 'centering', 'counterfactual plot', 'regression', 'interaction-term']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
+
+## Contents
+{:.no_toc}
+*  
+{: toc}
+
 
 
 

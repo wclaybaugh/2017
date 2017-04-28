@@ -4,9 +4,16 @@ shorttitle: GP2
 notebook: GP2.ipynb
 noline: 1
 summary: ""
+keywords: ['normal distribution', 'multivariate normal', 'marginal', 'conditional', 'priors', 'correlation', 'covariance', 'kernel', 'posterior', 'posterior predictive', 'infinite-basis', "mercer's theorem", 'gaussian process', 'regression', 'kernelized regression', 'kernel trick', 'representer theorem']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
+
+## Contents
+{:.no_toc}
+*  
+{: toc}
+
 
 
 

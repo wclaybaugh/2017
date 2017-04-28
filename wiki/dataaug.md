@@ -8,6 +8,11 @@ layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
 
+## Contents
+{:.no_toc}
+*  
+{: toc}
+
 The idea is to construct iterative algorithms for sampling based on the introduction of unobserved data or **hidden** variables. Does the iterative part sound familiar? We did that in Gibbs sampling.
 
 We'll soon see s deterministic version of this idea when we talk about the Expectation Maximization Algorithm (Dempster, Laird, and Rubin (1977)). Here we'll see a stochastic version from Tanner and Wong's (1987) *Data Augmentation algorithm for posterior sampling*. This was also explored in the physics by Swendsen and Wang's (1987) algorithm for sampling from Ising and Potts models. (Look it up, it relates to your homework!)
