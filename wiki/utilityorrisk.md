@@ -4,6 +4,7 @@ shorttitle: utilityorrisk
 notebook: utilityorrisk.ipynb
 noline: 1
 summary: ""
+keywords: ['optimization', 'decision theory', 'decision risk', 'estimation risk', 'model averaging', 'bayes risk', 'true-belief model']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
@@ -12,6 +13,7 @@ layout: wiki
 {:.no_toc}
 *  
 {: toc}
+
 
 
 

@@ -4,6 +4,7 @@ shorttitle: prosocialchimps
 notebook: prosocialchimps.ipynb
 noline: 1
 summary: ""
+keywords: ['glm', 'varying intercept', 'multiple varying intercept', 'posterior predictive', 'model averaging', 'model comparison']
 data: ['data/chimpanzees2.csv']
 layout: wiki
 ---
@@ -13,6 +14,7 @@ layout: wiki
 {:.no_toc}
 *  
 {: toc}
+
 
 
 ![](images/pchimps.png)

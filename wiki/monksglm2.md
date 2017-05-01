@@ -4,6 +4,7 @@ shorttitle: monksglm2
 notebook: monksglm2.ipynb
 noline: 1
 summary: ""
+keywords: ['glm', 'regression', 'poisson regression', 'link-function', 'zero-inflated', 'mixture model']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
@@ -12,6 +13,7 @@ layout: wiki
 {:.no_toc}
 *  
 {: toc}
+
 
 
 

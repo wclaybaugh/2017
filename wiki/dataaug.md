@@ -4,6 +4,7 @@ shorttitle: dataaug
 notebook: dataaug.ipynb
 noline: 1
 summary: ""
+keywords: ['data augmentation', 'gibbs sampler', 'mcmc']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
@@ -12,6 +13,7 @@ layout: wiki
 {:.no_toc}
 *  
 {: toc}
+
 
 The idea is to construct iterative algorithms for sampling based on the introduction of unobserved data or **hidden** variables. Does the iterative part sound familiar? We did that in Gibbs sampling.
 

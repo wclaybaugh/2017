@@ -4,6 +4,7 @@ shorttitle: Lab7_bioassay
 notebook: Lab7_bioassay.ipynb
 noline: 1
 summary: ""
+keywords: ['bioassay', 'hierarchical', 'binomial regression', 'regression', 'gewecke', 'gelman-rubin']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
@@ -12,6 +13,7 @@ layout: wiki
 {:.no_toc}
 *  
 {: toc}
+
 
 ## Contents
 {:.no_toc}

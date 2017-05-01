@@ -4,6 +4,7 @@ shorttitle: generativemodels
 notebook: generativemodels.ipynb
 noline: 1
 summary: ""
+keywords: ['supervised learning', 'generative models', 'discriminative models', 'machine learning', 'empirical risk minimization']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
@@ -12,6 +13,7 @@ layout: wiki
 {:.no_toc}
 *  
 {: toc}
+
 
 
 

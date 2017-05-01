@@ -4,6 +4,7 @@ shorttitle: Lab7_Rat_Tumor
 notebook: Lab7_Rat_Tumor.ipynb
 noline: 1
 summary: ""
+keywords: ['beta-binomial', 'hierarchical', 'pymc3', 'posterior predictive']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
@@ -12,6 +13,7 @@ layout: wiki
 {:.no_toc}
 *  
 {: toc}
+
 
 ## Contents
 {:.no_toc}

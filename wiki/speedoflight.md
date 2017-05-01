@@ -4,6 +4,7 @@ shorttitle: speedoflight
 notebook: speedoflight.ipynb
 noline: 1
 summary: ""
+keywords: ['model checking', 'posterior predictive', 'test statistic', 'discrepancy', 'bayesian p-values']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
@@ -12,6 +13,7 @@ layout: wiki
 {:.no_toc}
 *  
 {: toc}
+
 
 
 

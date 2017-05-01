@@ -4,6 +4,7 @@ shorttitle: gaussian-mixture-model-advi
 notebook: gaussian-mixture-model-advi.ipynb
 noline: 1
 summary: ""
+keywords: ['mixture model', 'gaussian mixture model', 'normal distribution', 'advi', 'marginals', 'marginalizing over discretes', 'elbo']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
@@ -12,6 +13,8 @@ layout: wiki
 {:.no_toc}
 *  
 {: toc}
+
+
 
 This notebook is taken almost verbatim from the pymc3 documentation. Its a very good illustration of what needs to be done to
 

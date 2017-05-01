@@ -4,6 +4,7 @@ shorttitle: classificationrisk
 notebook: classificationrisk.ipynb
 noline: 1
 summary: ""
+keywords: ['classification', 'supervised learning', 'decision risk', 'decision theory', 'bayes risk']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
@@ -12,6 +13,7 @@ layout: wiki
 {:.no_toc}
 *  
 {: toc}
+
 
 
 

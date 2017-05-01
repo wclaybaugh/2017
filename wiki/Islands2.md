@@ -4,7 +4,7 @@ shorttitle: Islands2
 notebook: Islands2.ipynb
 noline: 1
 summary: ""
-keywords: ['poisson distribution', 'poisson regression', 'glm', 'centering', 'counterfactual plot', 'regression', 'interaction-term', 'model-comparison', 'varying intercept', 'waic', 'hierarchical model', 'overdispersion']
+keywords: ['poisson distribution', 'poisson regression', 'glm', 'centering', 'counterfactual plot', 'regression', 'interaction-term', 'model-comparison', 'varying intercept', 'waic', 'hierarchical model', 'overdispersion', 'oceanic tools']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}

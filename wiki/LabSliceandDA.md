@@ -4,6 +4,7 @@ shorttitle: LabSliceandDA
 notebook: LabSliceandDA.ipynb
 noline: 1
 summary: ""
+keywords: ['slice sampling', 'data augmentation']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
@@ -12,6 +13,7 @@ layout: wiki
 {:.no_toc}
 *  
 {: toc}
+
 
 
 
@@ -594,6 +596,4 @@ plot_MCMC_trace(ax, xtrace, ytrace, True)
 
 
 ![png](LabSliceandDA_files/LabSliceandDA_31_0.png)
-
-
 

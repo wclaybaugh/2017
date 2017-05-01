@@ -4,6 +4,7 @@ shorttitle: corr
 notebook: corr.ipynb
 noline: 1
 summary: ""
+keywords: ['correlation', 'covariance', 'multivariate normal', 'lkj prior']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
@@ -12,6 +13,7 @@ layout: wiki
 {:.no_toc}
 *  
 {: toc}
+
 
 
 

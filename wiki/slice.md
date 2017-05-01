@@ -4,6 +4,7 @@ shorttitle: slice
 notebook: slice.ipynb
 noline: 1
 summary: ""
+keywords: ['data augmentation', 'slice sampling', 'mcmc']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
@@ -12,6 +13,7 @@ layout: wiki
 {:.no_toc}
 *  
 {: toc}
+
 
 
 

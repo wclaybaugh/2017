@@ -4,6 +4,7 @@ shorttitle: mixtures_and_mcmc
 notebook: mixtures_and_mcmc.ipynb
 noline: 1
 summary: ""
+keywords: ['supervised learning', 'semi-supervised learning', 'unsupervised learning', 'mixture model', 'gaussian mixture model', 'pymc3', 'label-switching', 'identifiability', 'normal distribution', 'pymc3 potentials']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
@@ -12,6 +13,7 @@ layout: wiki
 {:.no_toc}
 *  
 {: toc}
+
 
 We now do a study of learning mixture models with MCMC. We have already done this in the case of the Zero-Inflated Poisson Model, and will stick to Gaussian Mixture models for now.
 
@@ -1068,7 +1070,7 @@ plt.title("Visualizing Clusters using posterior-mean parameters")
 We use the $p(x \vert z)$ to do our classification. What we really want is $p(z \vert x)$, but we can use bayes theorem to inver this, as shown in the diagram below.
 
 
-![gen and dis](https://dl.dropboxusercontent.com/u/75194/bishopgendis.png)
+![gen and dis](images/bishopgendis.png)
 
 
 

@@ -4,6 +4,7 @@ shorttitle: advi
 notebook: advi.ipynb
 noline: 1
 summary: ""
+keywords: ['variational inference', 'elbo', 'kl-divergence', 'normal distribution', 'mean-field approximation', 'advi', 'optimization', 'sgd', 'minibatch sgd']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
@@ -12,6 +13,7 @@ layout: wiki
 {:.no_toc}
 *  
 {: toc}
+
 
 
 

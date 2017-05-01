@@ -4,6 +4,7 @@ shorttitle: VI
 notebook: VI.ipynb
 noline: 1
 summary: ""
+keywords: ['variational inference', 'elbo', 'cavi', 'kl-divergence', 'normal distribution', 'mixture model', 'gaussian mixture model', 'mean-field approximation', 'latent variables', 'optimization']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
@@ -12,6 +13,7 @@ layout: wiki
 {:.no_toc}
 *  
 {: toc}
+
 
 
 
@@ -206,7 +208,7 @@ Hence, the above result that leads us to CAVI.
 
 The goal here is to infer the latent variables that govern the observed data using Bayesian inference. We choose to model the data as a mixture of Gaussians. The inference is done using Variational Inference.
 
-<img src="Gaussian_Mixture_Model.png">
+![](images/Gaussian_Mixture_Model.png)
 
 The above figure from Bishop is graphical model representing a mixture of Gaussians
 

@@ -4,6 +4,7 @@ shorttitle: typesoflearning
 notebook: typesoflearning.ipynb
 noline: 1
 summary: ""
+keywords: ['generative model', 'supervised learning', 'semi-supervised learning', 'unsupervised learning', 'mixture model', 'gaussian mixture model', 'latent variables']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
@@ -12,6 +13,7 @@ layout: wiki
 {:.no_toc}
 *  
 {: toc}
+
 
 
 

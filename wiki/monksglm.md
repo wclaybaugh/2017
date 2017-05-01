@@ -4,6 +4,7 @@ shorttitle: monksglm
 notebook: monksglm.ipynb
 noline: 1
 summary: ""
+keywords: ['glm', 'regression', 'poisson regression', 'link-function']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
@@ -12,6 +13,7 @@ layout: wiki
 {:.no_toc}
 *  
 {: toc}
+
 
 
 
@@ -61,7 +63,7 @@ The logit function is an example of a **link** function.
 
 Remember the binomial distribution is the least informative distribution we can use to model our prior knowledge of y. Different constraints, different maximum entropy distribution.
 
-Link functions are needed as there is rarely a parameter like $\mu$ describing a average outcome, and also, rarely are these parameters unbounded. Its job is to map the linear space of the model (the $\alpha + \betax_i$ part, nothing special about this, just a choice) to the non-linear space of parameters like $p$.
+Link functions are needed as there is rarely a parameter like $\mu$ describing a average outcome, and also, rarely are these parameters unbounded. Its job is to map the linear space of the model (the $\alpha + \beta x_i$ part, nothing special about this, just a choice) to the non-linear space of parameters like $p$.
 
 For most GLMs, the common links we use are the **logit** link, already used by you in the bioassay Binomial GLM to model the space of probabilities, and the **log** link which you will use here to enforce positiveness on a parameter in poisson regression.
 

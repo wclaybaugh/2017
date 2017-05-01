@@ -4,6 +4,7 @@ shorttitle: marginaloverdiscrete
 notebook: marginaloverdiscrete.ipynb
 noline: 1
 summary: ""
+keywords: ['marginalizing over discretes', 'mixture model', 'gaussian mixture model', 'log-sum-exp trick', 'pymc3']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
@@ -12,6 +13,7 @@ layout: wiki
 {:.no_toc}
 *  
 {: toc}
+
 
 
 

@@ -4,6 +4,7 @@ shorttitle: lab3_unsolved
 notebook: lab3_unsolved.ipynb
 noline: 1
 summary: ""
+keywords: ['gradient descent', 'logistic regression', 'theano', 'sgd', 'minibatch sgd']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
@@ -12,6 +13,7 @@ layout: wiki
 {:.no_toc}
 *  
 {: toc}
+
 
 ## Learning Aims
 

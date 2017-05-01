@@ -4,6 +4,7 @@ shorttitle: distribute_frequentist-example
 notebook: distribute_frequentist-example.ipynb
 noline: 1
 summary: ""
+keywords: ['frequentist statistics', 'installing python', 'exponential distribution', 'poisson distribution', 'maximum likelihood', 'bootstrap']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
@@ -12,6 +13,7 @@ layout: wiki
 {:.no_toc}
 *  
 {: toc}
+
 
 ## Learning Aims
 
