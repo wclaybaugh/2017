@@ -3,7 +3,7 @@ title: Formal Tests for Convergence
 shorttitle: gewecke
 noline: 1
 layout: wiki
-keywords: ['bayesian', 'MCMC', 'MCMC engineering', 'formal tests']
+keywords: ['bayesian', 'MCMC', 'mcmc engineering', 'formal tests']
 summary: "The Gewecke test takes two non-overlapping samples and compares their means, trying to see how similar they are. The Gelman-Rubin test compares the winthin-chain to between-chain variance."
 ---
 

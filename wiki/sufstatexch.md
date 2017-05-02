@@ -4,7 +4,7 @@ shorttitle: sufstatexch
 notebook: sufstatexch.ipynb
 noline: 1
 summary: ""
-keywords: ['sufficient statistics', 'exponential family', 'exchangeability', 'poisson', 'gamma', 'poisson-gamma', 'bayesian', 'conjugate prior']
+keywords: ['sufficient statistics', 'exponential family', 'exchangeability', 'poisson distribution', 'gamma', 'poisson-gamma', 'bayesian', 'conjugate prior']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}

@@ -4,7 +4,7 @@ shorttitle: discretemcmc
 notebook: discretemcmc.ipynb
 noline: 1
 summary: ""
-keywords: ['discrete sampling', 'mcmc', 'metropolis', 'poisson', 'proposal matrix', '']
+keywords: ['discrete sampling', 'mcmc', 'metropolis', 'poisson distribution', 'proposal matrix', '']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}

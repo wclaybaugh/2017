@@ -4,7 +4,7 @@ shorttitle: probability
 notebook: probability.ipynb
 noline: 1
 summary: ""
-keywords: ['probability', 'probability rules', 'marginals', 'conditions', 'independence', 'bayes theorem', 'random variables']
+keywords: ['probability', 'probability rules', 'marginal', 'conditional', 'independence', 'bayes theorem', 'random variables']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}

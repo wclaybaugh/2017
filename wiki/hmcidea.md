@@ -2,7 +2,7 @@
 title: The Idea of Hamiltonian Monte Carlo
 shorttitle: hmcidea
 layout: wiki
-keywords: ['MCMC', 'HMC', 'probabilistic modeling']
+keywords: ['MCMC', 'HMC', 'energy', 'probabilistic modeling']
 ---
 
 ## Exploring the typical set

@@ -4,7 +4,7 @@ shorttitle: gaussian-mixture-model-advi
 notebook: gaussian-mixture-model-advi.ipynb
 noline: 1
 summary: ""
-keywords: ['mixture model', 'gaussian mixture model', 'normal distribution', 'advi', 'marginals', 'marginalizing over discretes', 'elbo']
+keywords: ['mixture model', 'gaussian mixture model', 'normal distribution', 'advi', 'marginal', 'marginalizing over discretes', 'elbo']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}

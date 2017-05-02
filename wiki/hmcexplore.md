@@ -4,7 +4,7 @@ shorttitle: hmcexplore
 notebook: hmcexplore.ipynb
 noline: 1
 summary: ""
-keywords: ['hamiltonian monte carlo', 'nuts', 'leapfrog', 'canonical distribution', 'microcanonical distribution', 'transition distribution', 'marginal energy distribution', 'data augmentation', 'classical mechanics', 'detailed balance', 'statistical mechanics']
+keywords: ['hamiltonian monte carlo', 'energy', 'nuts', 'leapfrog', 'canonical distribution', 'microcanonical distribution', 'transition distribution', 'marginal energy distribution', 'data augmentation', 'classical mechanics', 'detailed balance', 'statistical mechanics']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}

@@ -4,7 +4,7 @@ shorttitle: modelcompar2
 notebook: modelcompar2.ipynb
 noline: 1
 summary: ""
-keywords: ['kl-divergence', 'deviance', 'aic', 'dic', 'waic', 'model-comparison', 'model-averaging', 'in-sample', 'cross-validation', 'empirical bayes', 'loocv']
+keywords: ['kl-divergence', 'deviance', 'aic', 'dic', 'waic', 'model-comparison', 'model averaging', 'in-sample', 'cross-validation', 'empirical bayes', 'loocv']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}

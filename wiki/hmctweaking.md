@@ -4,7 +4,7 @@ shorttitle: hmctweaking
 notebook: hmctweaking.ipynb
 noline: 1
 summary: ""
-keywords: ['hamiltonian monte carlo', 'nuts', 'leapfrog', 'canonical distribution', 'microcanonical distribution', 'transition distribution', 'marginal energy distribution', 'data augmentation', 'classical mechanics', 'detailed balance', 'statistical mechanics', 'divergences', 'step-size', 'non-centered hierarchical model', 'hierarchical']
+keywords: ['energy', 'hamiltonian monte carlo', 'nuts', 'leapfrog', 'canonical distribution', 'microcanonical distribution', 'transition distribution', 'marginal energy distribution', 'data augmentation', 'classical mechanics', 'detailed balance', 'statistical mechanics', 'divergences', 'step-size', 'non-centered hierarchical model', 'hierarchical']
 layout: wiki
 ---
 {% assign links = site.data.wikilinks %}
