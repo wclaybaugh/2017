@@ -10,9 +10,12 @@ layout: default
 
 
 ### Foundations - Probability
-- [The Basics of Probability](wiki/probability.html)
+- [The Basics of Probability](wiki/probability_basics.html)
+- [Probability Rules] (wiki/probability_rules.html)
+- [TODO: PDF placeholder] (wiki/PMF_CDF_marginal_conditional.html)
 - [Probability Mass Functions, Densities, and Cumulative Distribution Functions](wiki/distributions.html)
 - Joint, Marginal, and Conditional distributions
+- [Bayes Rule] (wiki/bayes_rule.html)
 - [Law of Large Numbers: Averages converge] (wiki/expectations.html)
 - Central Limit Theorem: The particular average you get follows a normal distribution
 - Hoefding's Inequality: Even finite sums aren't too wrong
@@ -40,7 +43,7 @@ layout: default
 
 
 ### Foundations - Statistics
-- What is a model?
+- [What is a model?] (wiki/what_is_a_model.html)
 - Estimation and Model Fitting
 - [Fitting method: Maximum Likelihood] (wiki/MLE.html)
 - Fitting method: Method of Moments
@@ -57,8 +60,15 @@ layout: default
 
 ### Foundations - Simulation
 - Basic Monte Carlo
-- Law of Large Numbers applied to simulation
+- [Law of Large Numbers applied to simulation] (wiki/LLN_applied_to_simulation.html)
 - Central Limit Theorem applied to simulation
+
+
+### Kinds of Models
+- Likelihood, forecast, etc TODO: see probability_basics
+- [Generative vs Discriminative] (wiki/generativemodels.html)
+- [Mixture Models, and types of learning] (wiki/typesoflearning.html)
+- [Supervised vs Unsupervised Learning] (wiki/typesoflearning.html)
 
 
 ### Machine Learning - Fitting
@@ -204,12 +214,6 @@ layout: default
 - [The idea behind the GP] (wiki/GP1.html)
 - [Gaussian Processes and 'Non-parametric' Bayes] (wiki/GP2.html)
 - [Inference for GPs] (wiki/gp3.html)
-
-
-### Kinds of Models
-- [Generative vs Discriminative] (wiki/generativemodels.html)
-- [Mixture Models, and types of learning] (wiki/typesoflearning.html)
-- [Supervised vs Unsupervised Learning] (wiki/typesoflearning.html)
 
 
 ### ???
