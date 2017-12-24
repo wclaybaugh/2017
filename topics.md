@@ -6,7 +6,7 @@ layout: default
 
 ### Foundations - Math
 - [Jensen’s Inequality: The line connecting two points on a parabola is above the parabola] (wiki/jensens.html)
-- Derivatives
+- [Calculus: Stretching, Curvature, and Max/Mins] (wiki/Derivatives)
 
 
 ### Foundations - Probability
