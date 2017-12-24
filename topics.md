@@ -4,217 +4,224 @@ shorttitle: Topics
 layout: default
 ---
 
-These are not listed in the order of when they will be covered, or even the depth in which they will be covered (this is one course, after all). But these are all topics we will be touching on. Some will be covered in class, some in homework, some in lab, and some you will be expected to read on your own.
+### Foundations - Math
+- [Jensen’s Inequality: The line connecting two points on a parabola is above the parabola] (wiki/jensens.html)
+- Derivatives
 
-Expect this list to either shrink, or for some topics to be replaced, as the semester goes on!
 
-### introduction
+### Foundations - Probability
+- [The Basics of Probability](wiki/probability.html)
+- [Probability Mass Functions, Densities, and Cumulative Distribution Functions](wiki/distributions.html)
+- Joint, Marginal, and Conditional distributions
+- [Law of Large Numbers: Averages converge] (wiki/expectations.html)
+- Central Limit Theorem: The particular average you get follows a normal distribution
+- Hoefding's Inequality: Even finite sums aren't too wrong
 
-- why this course
-- problems you can solve
-- the [Box loop](wiki/boxloop.html)
-- representing models graphically
 
-### Probability
-
-- the basics of [Probability](wiki/probability.html)
-- [probability mass functions, densities and cumulative functions](wiki/distributions.html)
-- distributions [example](wiki/distrib-example.html)
-- [expectations and integration](wiki/Expectations.html)
-
-### Distributions
-
+### Foundations - Distributions
+- Distributions Cheat Sheet
 - Gaussian Distribution
+- Multi-Dimensional Gaussian
 - Bernoulli Distribution
 - Binomial Distribution
 - Poisson Distribution
 - Exponential Distribution
-
-### Basic Stats and Monte Carlo
-
-- [law of large numbers](wiki/Expectations.html)
-- pdf's vs sampling
-- monte-carlo for [integrals](wiki/montecarlointegrals.html)
-- [sampling and central limit theorem](wiki/SamplingCLT.html)
-
-### Frequentist Statistics
-
-- [Frequentist principles](wiki/frequentist.html) with sampling distributions and bootstrap
-- [frequentist example](wiki/frequentist-example.html)
-- [Sampling distributions and bootstrap](wiki/frequentist.html)
-- p-values and confidence intervals
-
-### sampling methods
-
-- sampling vs simulation
-- the [inverse method](wiki/inversetransform.html) from the cdf
-- [rejection sampling](wiki/rejectionsampling.html)
-- [importance sampling](wiki/importancesampling.html)
-- SIR
-- 2D and marginals from a sampling perspective
-
-### Maximum Likelihood and Risk
-
-- [maximum likelihood and log-likelihood](wiki/MLE.html)
-- density estimation vs supervised learning
-- covariates and linear regression: decision risk
-- logistic regression
-
-### Machine Learning a model
-
-- approximation (ERM) vs Statistics
-- bias and variance
-- cross-validation
-- regularization
-- classification via decision risk
-
-### Optimization
-
-- basic optimization
-- gradient free methods
-- gradient based methods
-- stochastic gradient descent(SGD)
-- convexity and Jensen's inequality
-- theano and automatic differentiation
-- SGD using Theano for logistic regression
-
-### Information Theory and Statistical mechanics
-
-- entropy and cross-entropy
-- KL divergence and deviance
-- model comparison with likelihood ratios and AIC
-- maximum entropy distributions: binomial and normal
-- the exponential family of distributions
-- statistical mechanics: stationarity and the ensembles
-- the boltzmann distribution
+- Cauchy
+- Uniform
+- Beta
+- Gamma
 
 
-### Combinatoric optimization and markov chains
+### Foundations - Data
+- The Myth of "The" Data
+- Sampling Distributions
+- Law of Large Numbers in practice
+- Central Limit Theorem in practice
 
-- combinatoric optimization methods
-- markov chains
-- simulated annealing
-- the simulated annealing markov chain
-- the traveling salesman problem
 
-### Hidden variables and learning
+### Foundations - Statistics
+- What is a model?
+- Estimation and Model Fitting
+- [Fitting method: Maximum Likelihood] (wiki/MLE.html)
+- Fitting method: Method of Moments
+- Identifiability: Sometimes there are two answers. Try to avoid that.
+- p-values: What percentile of rare is the data under a given parameter setting
+- Confidence Intervals: Drawn so that if you re-collected the data 95% of the intervals would contain the true value, whatever it is
 
-- hidden variables
-- mixture models and unsupervised learning
-- generative vs discriminative models
-- missing data and Data Augmentation
-- the expectation maximization algorithm
-- EM algorithm, statistical version
-- Applications of EM
 
-### Basic Bayesian Stats
+### Foundations - Models
+- Linear regression (as least squares): Define a loss function and run with it
+- Linear regression (as a probability model): Add distributional assumptions to make stronger statements
+- GLMs: Use distributional assumptions appropriate to your context
 
-- the meaning of bayes theorem
-- MLE of a binomial and beta-binomial bayesian updating
-- the formal structure of bayesian inference and the globe throw example
-- posteriors, marginal posteriors and posterior predictives
-- frequentist equivalences to bayesian stats
-- priors and their choice
 
-### Even more bayes
+### Foundations - Simulation
+- Basic Monte Carlo
+- Law of Large Numbers applied to simulation
+- Central Limit Theorem applied to simulation
 
-- MAP, plugin predictive, and point estimates
-- posterior predictive intervals
-- shrinkage and regularization
-- empirical bayes and the (ever more) bayesian hierarchy
-- hierarchical models and regularization: using empirical bayes
-- combining multiple experiments: bayesian meta-analysis
 
-### Machine Learning and Decision Making from a bayesian perspective
+### Machine Learning - Fitting
+- [Learning (aka Fitting) a Model] (wiki/noiseless_learning.html)
+- [Learning with Noise: You Will Overfit] (wiki/noisylearning.html)
+- [Regularization: Combat overiftting by making the model pay for flexibilty] (wiki/regularization.html)
 
-- point estimates from decision theory: decision risk
-- the bayesian structure of machine learning through posterior predictives
-- generative models revisited and LDA
-- hyper-parameters in a bayesian setup.
-- are we playing with parameters or with models?
-- multistage decision analysis
 
-### MCMC
+### Machine Learning - Cross Validation
+- [Validation and Cross Validation] (wiki/validation.html)
+- K-fold and Leave One Out Cross Validation: Which is better?
 
-- when is MCMC needed? (why not always use importance sampling)
-- details of the markov chain and the proposal distribution
-- how to write a Metropolis-Hastings (MH) sampler
-- MCMC convergence tuning and diagnostics: burnin, thinning, and autocorrelation
-- the structure of pymc
-- gibbs sampling, a simpler version of MCMC
-- different kinds of gibbs
-- the relationship of gibbs to Data Augmentation and EM
-- Hierarchical model full bayesian: alternating MH and gibbs for different posteriors (rats)
-- Missing data from a sampling perspective
 
-### Convergence and Model checking
+### Bootstrapping
+- Booststrapping: Simulating new samples of data
+- Bootstrapping to get a sampling distribution, confidence interval, or p value
 
-- Convergence problems with MCMC and gibbs: correlations and efficiency
-- Gelman Rubin and Gewecke tests
-- External Validation of models using holdout sets
-- Posterior predictive checking, posterior replications
-- Posterior predictive p-values
-- Interesting ideas to fix convergence issues
 
-### More sampling
+### Information Theory
+- [Entropy: Surprise, and Difficulty of Guessing] (wiki/Entropy.html)
+- KL divergence: How much do the data surprise our model?
+- [Divergence and Deviance: How different are two distributions? How wrong is a model?] (wiki/Divergence.html)
+- Maximum entropy distributions
 
-- Slice sampler
-- Mechanics and Statistical Mechanics for HMC
-- Hamiltonian Monte Carlo
-- NUTS and other improvements on HMC
-- HMC convergence vs others
+### Decision Theory
+- [Classification Risk] (wiki/classificationrisk.html)
+- [ERM] (wiki/generativemodels.html)
 
-### From density models to regression
+### Model Comparison (Choosing one of several models)
+- [Test set to compute out-of-sample risk]	(wiki/testingtraining.html)
+- [Model Comparison using in-sample information criteria] (wiki/modelcompar.html)
+- KL (again), AIC, BIC	
+- [Model Comparison continued] (wiki/modelcompar2.html)
 
-- regression as bayesian updating
-- normal prior as ridge regression
-- exponential family and glms with a link function
-- a bayesian glm example
-- exposure and zero-inflation in glms
-- overdispersion in glms
-- hierarchical GLMs: radon example
+### Optimization:
+- [Gradient Descent in one dimension] (wiki/optimcalc.html)
+- [Gradient Descent and SGD] (wiki/gradientdescent.html)
+- [Simulated Annealing] (wiki/simanneal.html)
 
-### Model comparision and selection
 
-- out of sample performance
-- evidence
-- bayes ratios
-- cross validation (LOO) for model selection
-- BIC/WAIC/DIC etc measures: KL and deviance out of sample.
-- model averaging and ensembles
+### Sampling from a Distribution
+- Samples vs PDFs: why we like having a sample
+- [Inverse Transform for sampling] (wiki/inversetransform.html)
+- [Rejection Sampling] (wiki/rejectionsampling.html)
 
-### Variational Algorithms
 
-- normal approximation
-- marginal posterior modes with EM
-- variational inference
-- expectation propagation
-- ADVI
+### Variance Reduction
+- [Importance Sampling: ] (wiki/importancesampling.html)
+- [stratified Sampling] (wiki/stratification.html)
 
-### Non-IID temporal models
 
-- time series and dealing with conditional dependence on previous times
-- Hidden Markov Models (HMM)
-- viterbi and other algorithms
-- stochastic processes
-- Kalman filters
-- Sequential Monte Carlo
-- Particle Filters
+### MCMC - Basics
+- Intro: Markov processes can and often do converge
+- [Markov Chains and MCMC] (wiki/markov.html)
 
-### Covariance and Gaussian Processes
 
-- glms with a covariance in intercepts and slopes
-- spatial autocorrelation in glms
-- gaussian processes
-- gaussian processes for regression
-- the capacity of models
-- bayesian non-parametrics
+### MCMC - Convergence
+- Effective Sample Size
+- [Formal Tests for Convergence] (wiki/gewecke.html)
+- Convergence Test: Geweke
+- Convergence Test: Gelman-Rubin
 
-### Long Running models in this course
 
-- Rat Tumors
-- Kidney Cancer
-- Oceanic tools
-- Radon in houses
-- Chimpanzees
-- Drinking Monks
+### MCMC - Metropolis-Hastings
+- Metroplis	
+- [Metropolis-Hastings] (wiki/metropolishastings.html)
+- [Discrete MCMC] (wiki/discretemcmc.html)
+- [Step size considerations] (wiki/convergenceandcoverage.html)
+
+
+### MCMC - Gibbs Sampling
+- [Intro to Gibbs Sampling] (wiki/introgibbs.html)
+- [Gibbs from Metropolis-Hastings] (wiki/gibbsfromMH.html)
+- [Gibbs with conditional a conjugate] (wiki/gibbsconj.html)
+- Gibbs on a graphical model	
+- [A gibbs sampler with lots of autocorrelation] (wiki/tetchgibbs.html)
+
+
+### MCMC - Data Augmentation
+- [Data Augmentation] (wiki/dataaug.html)
+- [Slice Sampling] (wiki/slice.html)
+
+
+### MCMC - HMC
+- [The Idea of Hamiltonian Monte Carlo] (wiki/hmcidea.html)
+- [Exploring Hamiltonian Monte Carlo] (wiki/hmcexplore.html)
+
+
+### MCMC - Tuning
+- Centering to help HMC
+- [L, epsilon, and other tweaking] (wiki/hmctweaking.html)
+- [Gelman Schools and Hierarchical Pathology (Funnels)] (wiki/gelmanschools.html)
+- [Marginalizing over Discretes] (wiki/marginaloverdiscrete.html)
+
+
+### Bayes - Basics
+- Bayesian (wiki/bayes.html)
+- Choosing Priors (wiki/priors.html)
+- Poserior, Posterior Predictive (and credible intervals)
+- Example: [Beta-Binomial and Globe Tossing] (wiki/globemode.html)
+- Example: [Fitting a normal distribution to data] (wiki/normalmodel.html)
+
+
+### Bayes - Regression
+- Example: [Fitting a normal model in pymc3] (wiki/normalmodelwithpymc.html)
+- [Bayesian Regression] (wiki/bayesianregression.html)
+- [From the normal model to regression]	(wiki/pymcnormalreg.html)
+- [Regression with custom priors] (wiki/reguninfprior.html)
+
+
+### Bayes - Pooling & Hierarchical Models
+- Pooling: 100 county-sized averages or one state-sized average?
+- [Hierarchical Models] (wiki/hierarch.html)
+- Fitting via Method of Moments
+- Fitting via Full Bayes
+- [Tumors in Rats] (wiki/tumorlab.html)
+
+
+### Bayes - GLMs
+- [Generalized Linear Models] :	(wiki/monksglm.html)
+- [Drunk Monks: 0-inflated poisson regression]: (wiki/monksglm2.html)
+- [Poisson Regression - tools on islands, part 1] (wiki/Islands1.html)
+- [Poisson Regression - tools on islands part 2] (wiki/Islands2.html)
+
+### Modeling Correlations between slopes and intercepts
+
+### Mixture Models
+- [Mixture Models, and types of learning] (wiki/typesoflearning.html)
+- [Mixtures and MCMC] (wiki/mixtures_and_mcmc.html)
+
+
+### Model Fitting
+- [Maximum Likelihood] (wiki/MLE.html)
+- Method of Moments
+- [The EM algorithm] (wiki/EM.html)
+- [EM with indices] (wiki/EM.html)
+- [EM example] (wiki/EM.html)
+- [Variational Inference] (wiki/VI.html)
+- [ADVI] (wiki/advi.html)
+
+
+### Gaussian Processes
+- [The idea behind the GP] (wiki/GP1.html)
+- [Gaussian Processes and 'Non-parametric' Bayes] (wiki/GP2.html)
+- [Inference for GPs] (wiki/gp3.html)
+
+
+### Kinds of Models
+- [Generative vs Discriminative] (wiki/generativemodels.html)
+- [Mixture Models, and types of learning] (wiki/typesoflearning.html)
+- [Supervised vs Unsupervised Learning] (wiki/typesoflearning.html)
+
+
+### ???
+- [Gelman Schools Theory] (wiki/gelmanschoolstheory.html)
+- [Poisson-Gamma] (wiki/sufstatexch.html)
+
+
+### Labs
+- [Lab 7: Bayesian inference with PyMC3] (wiki/Lab7_bioassay.html)
+- [Lab 8: A Brief Intro to Theano] (wiki/BrieIntroToTheano.html)
+- [Lab 8: Data Augmentation and Slice Sampling] (wiki/LabSliceandDA.html)
+- [Lab 10: Prosocial Chimps] (wiki/prosocialchimps.html)
+- [Lab 12: Correlations] (wiki/corr.html)
+- [Lab 12: Geographic Correlation and Oceanic Tools] (wiki/gpcorr.html)
+- [Lab 12: Gaussian Mixture Model with ADVI] (wiki/gaussian-mixture-model-advi.html)
