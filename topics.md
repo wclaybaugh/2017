@@ -14,6 +14,7 @@ layout: default
 - [Probability Rules] (wiki/probability_rules.html)
 - [Single-variable Probabilities: PMFs, Densities, and CDFs] (wiki/distributions.html)
 - [Multivariable Probabilities: Joint, Marginal, and Conditional distributions](wiki/joint_marginal_conditional.html)
+- [Independence] (wiki/independence.html)
 - [Bayes Rule] (wiki/bayes_rule.html)
 - [Law of Large Numbers: Averages converge] (wiki/expectations.html)
 - Central Limit Theorem: The particular average you get follows a normal distribution
