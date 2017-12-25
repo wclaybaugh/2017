@@ -12,9 +12,8 @@ layout: default
 ### Foundations - Probability
 - [The Basics of Probability](wiki/probability_basics.html)
 - [Probability Rules] (wiki/probability_rules.html)
-- [TODO: PDF placeholder] (wiki/PMF_CDF_marginal_conditional.html)
-- [Probability Mass Functions, Densities, and Cumulative Distribution Functions](wiki/distributions.html)
-- Joint, Marginal, and Conditional distributions
+- [Single-variable Probabilities: PMFs, Densities, and CDFs] (wiki/distributions.html)
+- [Multivariable Probabilities: Joint, Marginal, and Conditional distributions](wiki/joint_marginal_conditional.html)
 - [Bayes Rule] (wiki/bayes_rule.html)
 - [Law of Large Numbers: Averages converge] (wiki/expectations.html)
 - Central Limit Theorem: The particular average you get follows a normal distribution
@@ -23,6 +22,7 @@ layout: default
 
 ### Foundations - Distributions
 - Distributions Cheat Sheet
+- [TODO: break this up](wiki/distributions.html)
 - Gaussian Distribution
 - Multi-Dimensional Gaussian
 - Bernoulli Distribution
