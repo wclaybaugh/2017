@@ -16,8 +16,9 @@ layout: default
 - [Multivariable Probabilities: Joint, Marginal, and Conditional distributions](wiki/joint_marginal_conditional.html)
 - [Independence] (wiki/independence.html)
 - [Bayes Rule] (wiki/bayes_rule.html)
-- [Law of Large Numbers: Averages converge] (wiki/expectations.html)
-- Central Limit Theorem: The particular average you get follows a normal distribution
+- [Expectations] (wiki/expectations.html)
+- [Law of Large Numbers: Averages converge] (wiki/LLN.html)
+- [Central Limit Theorem: The particular average you get follows a normal distribution] (wiki/CLT.html)
 - Hoefding's Inequality: Even finite sums aren't too wrong
 
 
