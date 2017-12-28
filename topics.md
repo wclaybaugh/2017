@@ -20,7 +20,7 @@ layout: default
 - [Law of Large Numbers: Averages converge] (wiki/LLN.html)
 - [Central Limit Theorem: The particular average you get follows a normal distribution] (wiki/CLT.html)
 - Hoefding's Inequality: Even finite sums aren't too wrong
-
+- TODO: roll back this CLT to just talk about sums of RVs; talk about utility in "in practice"(?)
 
 ### Foundations - Distributions
 - Distributions Cheat Sheet
@@ -38,10 +38,10 @@ layout: default
 
 
 ### Foundations - Data
-- The Myth of "The" Data
-- Sampling Distributions
-- Law of Large Numbers in practice
-- Central Limit Theorem in practice
+- [The Myth of "The" Data] (wiki/the_data_myth.html)
+- [Sampling Distributions: that number you crunched could have been different] (wiki/sampling_distribution.html)
+- [Law of Large Numbers in practice] (wiki/LLN_in_practice.html)
+- [Central Limit Theorem in practice] (wiki/CLT_in_practice.html)
 
 
 ### Foundations - Statistics
@@ -52,7 +52,7 @@ layout: default
 - Identifiability: Sometimes there are two answers. Try to avoid that.
 - p-values: What percentile of rare is the data under a given parameter setting
 - Confidence Intervals: Drawn so that if you re-collected the data 95% of the intervals would contain the true value, whatever it is
-
+- [TODO: Terminology] (wiki/stats_terms.html)
 
 ### Foundations - Models
 - Linear regression (as least squares): Define a loss function and run with it
