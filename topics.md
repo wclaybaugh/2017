@@ -45,19 +45,18 @@ layout: default
 
 
 ### Foundations - Statistics
-- [What is a model?] (wiki/what_is_a_model.html)
-- Estimation and Model Fitting
+- [Statistical Models and Fitting] (wiki/what_is_a_model.html)
+- [Fitting method: Method of Moments] (wiki/method_of_moments.html)
 - [Fitting method: Maximum Likelihood] (wiki/MLE.html)
-- Fitting method: Method of Moments
 - Identifiability: Sometimes there are two answers. Try to avoid that.
-- p-values: What percentile of rare is the data under a given parameter setting
-- Confidence Intervals: Drawn so that if you re-collected the data 95% of the intervals would contain the true value, whatever it is
+- p-values: How rare (what percentile) is the data under a given parameter setting?
+- Confidence Intervals: Drawn so that if you re-collected the data and re-made the intervals 95% of the intervals would contain the true value, whatever it is
 - [TODO: Terminology] (wiki/stats_terms.html)
 
 ### Foundations - Models
 - Linear regression (as least squares): Define a loss function and run with it
-- Linear regression (as a probability model): Add distributional assumptions to make stronger statements
-- GLMs: Use distributional assumptions appropriate to your context
+- [Linear regression (as a probability model): Add distributional assumptions to make stronger statements] (wiki/lin_reg_probability.html)
+- [GLMs: Use distributional assumptions appropriate to your context] (wiki/glm.html)
 
 
 ### Foundations - Simulation
@@ -67,7 +66,7 @@ layout: default
 
 
 ### Kinds of Models
-- Likelihood, forecast, etc TODO: see probability_basics
+- [Types of Models] (wiki/types_of_models.html)
 - [Generative vs Discriminative] (wiki/generativemodels.html)
 - [Mixture Models, and types of learning] (wiki/typesoflearning.html)
 - [Supervised vs Unsupervised Learning] (wiki/typesoflearning.html)
@@ -85,7 +84,7 @@ layout: default
 
 
 ### Bootstrapping
-- Booststrapping: Simulating new samples of data
+- [Booststrapping: Simulating new samples of data] (wiki/bootstrap.html)
 - Bootstrapping to get a sampling distribution, confidence interval, or p value
 
 
