@@ -51,16 +51,17 @@ layout: default
 - Identifiability: Sometimes there are two answers. Try to avoid that.
 - p-values: How rare (what percentile) is the data under a given parameter setting?
 - Confidence Intervals: Drawn so that if you re-collected the data and re-made the intervals 95% of the intervals would contain the true value, whatever it is
-- [TODO: Terminology] (wiki/stats_terms.html)
+- [Terminology] (wiki/stats_terms.html)
 
 ### Foundations - Models
-- Linear regression (as least squares): Define a loss function and run with it
+- [Linear regression (as least squares): Define a loss function and run with it] (wiki/lin_reg_ols)
 - [Linear regression (as a probability model): Add distributional assumptions to make stronger statements] (wiki/lin_reg_probability.html)
 - [GLMs: Use distributional assumptions appropriate to your context] (wiki/glm.html)
+- [Logistic Regression: a particular GLM] (wiki/log_reg.html)
 
 
 ### Foundations - Simulation
-- Basic Monte Carlo
+- [Basic Monte Carlo] (wiki/basicmontercarlo.html)
 - [Law of Large Numbers applied to simulation] (wiki/LLN_applied_to_simulation.html)
 - Central Limit Theorem applied to simulation
 
@@ -134,7 +135,7 @@ layout: default
 
 
 ### MCMC - Metropolis-Hastings
-- Metroplis	
+- Metroplis	 (wiki/metropolis.html)
 - [Metropolis-Hastings] (wiki/metropolishastings.html)
 - [Discrete MCMC] (wiki/discretemcmc.html)
 - [Step size considerations] (wiki/convergenceandcoverage.html)
