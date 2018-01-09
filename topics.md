@@ -63,20 +63,20 @@ layout: default
 ### Foundations - Simulation
 - [Basic Monte Carlo] (wiki/basicmontercarlo.html)
 - [Law of Large Numbers applied to simulation] (wiki/LLN_applied_to_simulation.html)
-- Central Limit Theorem applied to simulation
+- [Central Limit Theorem applied to simulation] (CLT_applied_to_simulation.html)
 
 
 ### Kinds of Models
 - [Types of Models] (wiki/types_of_models.html)
-- [Generative vs Discriminative] (wiki/generativemodels.html)
-- [Mixture Models, and types of learning] (wiki/typesoflearning.html)
+- [Generative vs Discriminative: Model everything, or only what you need?] (wiki/generativemodels.html)
+- [Mixture Models: Distributions which roll a die to pick a distribution] (wiki/mixture_models.html)
 - [Supervised vs Unsupervised Learning] (wiki/typesoflearning.html)
 
 
 ### Machine Learning - Fitting
 - [Learning (aka Fitting) a Model] (wiki/noiseless_learning.html)
 - [Learning with Noise: You Will Overfit] (wiki/noisylearning.html)
-- [Regularization: Combat overiftting by making the model pay for flexibilty] (wiki/regularization.html)
+- [Regularization: Combat overfitting by making the model pay for flexibility] (wiki/regularization.html)
 
 
 ### Machine Learning - Cross Validation
@@ -85,7 +85,7 @@ layout: default
 
 
 ### Bootstrapping
-- [Booststrapping: Simulating new samples of data] (wiki/bootstrap.html)
+- [Bootstrapping: Simulating new samples of data] (wiki/bootstrap.html)
 - Bootstrapping to get a sampling distribution, confidence interval, or p value
 
 
@@ -196,6 +196,8 @@ layout: default
 - [Poisson Regression - tools on islands part 2] (wiki/Islands2.html)
 
 ### Modeling Correlations between slopes and intercepts
+
+
 
 ### Mixture Models
 - [Mixture Models, and types of learning] (wiki/typesoflearning.html)
