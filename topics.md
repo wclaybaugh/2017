@@ -75,13 +75,15 @@ layout: default
 
 ### Machine Learning - Fitting
 - [Learning (aka Fitting) a Model] (wiki/noiseless_learning.html)
-- [Learning with Noise: You Will Overfit] (wiki/noisylearning.html)
+- [Learning with Noise: Bias and Variance: Inflexible models can better ignore noise] (wiki/noisylearning.html)
+- [Test set: to measure model performance on fresh data] (wiki/test_set.html)
+- [Overfitting: Overly-Flexible models will do poorly out-of-sample] (wiki/overfitting.html)
 - [Regularization: Combat overfitting by making the model pay for flexibility] (wiki/regularization.html)
 
 
 ### Machine Learning - Cross Validation
 - [Validation and Cross Validation] (wiki/validation.html)
-- K-fold and Leave One Out Cross Validation: Which is better?
+- [Cross Validation: Why 5-fold CV is almost always the right choice] (wiki/k_fold.html)
 
 
 ### Bootstrapping
@@ -95,15 +97,17 @@ layout: default
 - [Divergence and Deviance: How different are two distributions? How wrong is a model?] (wiki/Divergence.html)
 - Maximum entropy distributions
 
+
 ### Decision Theory
 - [Classification Risk] (wiki/classificationrisk.html)
-- [ERM] (wiki/generativemodels.html)
+- [ERM] (wiki/erm.html)
+
 
 ### Model Comparison (Choosing one of several models)
-- [Test set to compute out-of-sample risk]	(wiki/testingtraining.html)
 - [Model Comparison using in-sample information criteria] (wiki/modelcompar.html)
 - KL (again), AIC, BIC	
 - [Model Comparison continued] (wiki/modelcompar2.html)
+
 
 ### Optimization:
 - [Gradient Descent in one dimension] (wiki/optimcalc.html)
@@ -223,6 +227,10 @@ layout: default
 ### ???
 - [Gelman Schools Theory] (wiki/gelmanschoolstheory.html)
 - [Poisson-Gamma] (wiki/sufstatexch.html)
+
+
+###Technologies
+[SKlearn] (wiki/sklearn.html)
 
 
 ### Labs
