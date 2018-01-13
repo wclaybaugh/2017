@@ -93,9 +93,10 @@ layout: default
 
 ### Information Theory
 - [Entropy: Surprise, and Difficulty of Guessing] (wiki/Entropy.html)
-- KL divergence: How much do the data surprise our model?
-- [Divergence and Deviance: How different are two distributions? How wrong is a model?] (wiki/Divergence.html)
-- Maximum entropy distributions
+- [Optional: Thermodynamic Entropy] (wiki/thermo_entropy.html)
+- [KL divergence: How much do the data surprise our model?] (wiki/KL_divergence.html)
+- [Divergence and Deviance: How different are two distributions? How wrong is a model?] (wiki/Deviance.html)
+- Maximum entropy distributions (wiki/maxent.html)
 
 
 ### Decision Theory
