@@ -131,7 +131,8 @@ layout: default
 
 
 ### MCMC - Basics
-- Intro: Markov processes can and often do converge
+- [Intro: Markov processes can and often do converge] (wiki/intro_markov.html)
+- [Metropolis] (wiki/metropolis_intro.html)
 - [Markov Chains and MCMC] (wiki/markov.html)
 
 
@@ -143,7 +144,7 @@ layout: default
 
 
 ### MCMC - Metropolis-Hastings
-- Metroplis	 (wiki/metropolis.html)
+- [Metropolis] (wiki/metropolis.html)
 - [Metropolis-Hastings] (wiki/metropolishastings.html)
 - [Discrete MCMC] (wiki/discretemcmc.html)
 - [Step size considerations] (wiki/convergenceandcoverage.html)
