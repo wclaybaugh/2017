@@ -95,19 +95,21 @@ layout: default
 - [Entropy: Surprise, and Difficulty of Guessing] (wiki/Entropy.html)
 - [Optional: Thermodynamic Entropy] (wiki/thermo_entropy.html)
 - [KL divergence: How much do the data surprise our model?] (wiki/KL_divergence.html)
-- [Divergence and Deviance: How different are two distributions? How wrong is a model?] (wiki/Deviance.html)
-- Maximum entropy distributions (wiki/maxent.html)
+- [Deviance: A key to estimating out-of-sample performance] (wiki/Deviance.html)
+- [Maximum entropy distributions] (wiki/maxent.html)
 
 
 ### Decision Theory
-- [Classification Risk] (wiki/classificationrisk.html)
-- [ERM] (wiki/erm.html)
+- [Intro: Turn probabilities into action by studying real-world consequences to each action] (wiki/decision_theory_intro.html)
+- [Exploring Risk Functions] (wiki/utilityorrisk.html)
+- [Risk in Classification] (wiki/classificationrisk.html)
+- [Optional: ERM] (wiki/erm.html)
+- [Optional: Advanced Decision Theory] (wiki/adv_decision_theory.html)
 
 
 ### Model Comparison (Choosing one of several models)
-- [Model Comparison using in-sample information criteria] (wiki/modelcompar.html)
-- KL (again), AIC, BIC	
-- [Model Comparison continued] (wiki/modelcompar2.html)
+- [Validation and Cross Validation] (wiki/validation.html)
+- [AIC, BIC, DIC, wAIC: Model Comparison using in-sample criteria] (wiki/modelcompar.html)
 
 
 ### Optimization:
@@ -118,13 +120,14 @@ layout: default
 
 ### Sampling from a Distribution
 - Samples vs PDFs: why we like having a sample
-- [Inverse Transform for sampling] (wiki/inversetransform.html)
+- [Inverse Transform: turn uniform draws into draws from any distribution (if you can find and invert the CDF)] (wiki/inversetransform.html)
+- [Box Muller: Build two Gaussian draws by sampling an angle and a(n exponential) radius] (wiki/box_muller.html)
 - [Rejection Sampling] (wiki/rejectionsampling.html)
-
+- [Importance Sampling] (wiki/importancesampling.html)
 
 ### Variance Reduction
-- [Importance Sampling: ] (wiki/importancesampling.html)
-- [stratified Sampling] (wiki/stratification.html)
+- [Importance Sampling: switch to a distribution that matches the target] (wiki/importancesampling_vr.html)
+- [stratified Sampling: break up the domain and spend effort sampling the wildest sub-regions] (wiki/stratification.html)
 
 
 ### MCMC - Basics
@@ -174,7 +177,7 @@ layout: default
 ### Bayes - Basics
 - Bayesian (wiki/bayes.html)
 - Choosing Priors (wiki/priors.html)
-- Poserior, Posterior Predictive (and credible intervals)
+- Posterior, Posterior Predictive (and credible intervals)
 - Example: [Beta-Binomial and Globe Tossing] (wiki/globemode.html)
 - Example: [Fitting a normal distribution to data] (wiki/normalmodel.html)
 
