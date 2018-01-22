@@ -177,6 +177,7 @@ layout: default
 - [Bayesian] (wiki/bayes.html)
 - [Choosing Priors] (wiki/priors.html)
 - [Summarizing the posterior: MAP, Mean, Credible Intervals] (wiki/posterior_summaries.html)
+- [Levels of Bayesian Analysis: Maximum Likelihood, MAP, Empirical Bayes, Full Bayes] (wiki/levelsofbayes.md)
 - Example: [Beta-Binomial and Globe Tossing] (wiki/globemode.html)
 - Example: [Fitting a normal distribution to data] (wiki/normalmodel.html)
 
@@ -185,7 +186,7 @@ layout: default
 - Example: [Fitting a normal model in pymc3] (wiki/normalmodelwithpymc.html)
 - [Bayesian Regression] (wiki/bayesianregression.html)
 - [From the normal model to regression]	(wiki/pymcnormalreg.html)
-- [Regression with custom priors] (wiki/reguninfprior.html)
+- Example: [Regression with custom priors] (wiki/reguninfprior.html)
 
 
 ### Bayes - Pooling & Hierarchical Models
@@ -201,6 +202,7 @@ layout: default
 - [Drunk Monks: 0-inflated poisson regression]: (wiki/monksglm2.html)
 - [Poisson Regression - tools on islands, part 1] (wiki/Islands1.html)
 - [Poisson Regression - tools on islands part 2] (wiki/Islands2.html)
+
 
 ### Modeling Correlations between slopes and intercepts
 
@@ -227,13 +229,13 @@ layout: default
 - [Inference for GPs] (wiki/gp3.html)
 
 
-### ???
-- [Gelman Schools Theory] (wiki/gelmanschoolstheory.html)
-- [Poisson-Gamma] (wiki/sufstatexch.html)
-
-
 ###Technologies
 [SKlearn] (wiki/sklearn.html)
+
+
+### Deep Dives
+- [Gelman Schools Theory] (wiki/gelmanschoolstheory.html)
+- [Poisson-Gamma] (wiki/sufstatexch.html)
 
 
 ### Labs
