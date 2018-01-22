@@ -132,30 +132,28 @@ layout: default
 
 ### MCMC - Basics
 - [Intro: Markov processes can and often do converge] (wiki/intro_markov.html)
-- [Metropolis] (wiki/metropolis_intro.html)
-- [Markov Chains and MCMC] (wiki/markov.html)
-
-
-### MCMC - Convergence
-- Effective Sample Size
-- [Formal Tests for Convergence] (wiki/gewecke.html)
-- Convergence Test: Geweke
-- Convergence Test: Gelman-Rubin
+- [Markov Chain Properties] (wiki/markov.html)
 
 
 ### MCMC - Metropolis-Hastings
-- [Metropolis] (wiki/metropolis.html)
-- [Metropolis-Hastings] (wiki/metropolishastings.html)
-- [Discrete MCMC] (wiki/discretemcmc.html)
+- [Metropolis: edit a Markov chain's transitions to sample from any distribution you want] (wiki/metropolis_intro.html)
+- [Example: Metropolis for discrete distribution] (wiki/discretemcmc.html)
+- [Metropolis HASTINGS: Gain efficiency by allowing non-symmetric proposals] (wiki/metropolishastings.html)
 - [Step size considerations] (wiki/convergenceandcoverage.html)
+- [Optional: Metropolis via Simulated Annealing] (wiki/metropolis)
+
+
+### MCMC - Convergence
+- [Effective Sample Size] (wiki/effective_sample_size.html)
+- [Geweke Test: Do subsections of the chain look the same?] (wiki/geweke_test.html)
+- [Gelman-Rubin Test: Do multiple chains all match?] (wiki/gelman_rubin_test.html)
 
 
 ### MCMC - Gibbs Sampling
 - [Intro to Gibbs Sampling] (wiki/introgibbs.html)
-- [Gibbs from Metropolis-Hastings] (wiki/gibbsfromMH.html)
 - [Gibbs with conditional a conjugate] (wiki/gibbsconj.html)
-- Gibbs on a graphical model	
-- [A gibbs sampler with lots of autocorrelation] (wiki/tetchgibbs.html)
+- Gibbs on a graphical model
+- [A Gibbs sampler with lots of autocorrelation] (wiki/tetchgibbs.html)
 
 
 ### MCMC - Data Augmentation
@@ -172,13 +170,13 @@ layout: default
 - Centering to help HMC
 - [L, epsilon, and other tweaking] (wiki/hmctweaking.html)
 - [Gelman Schools and Hierarchical Pathology (Funnels)] (wiki/gelmanschools.html)
-- [Marginalizing over Discretes] (wiki/marginaloverdiscrete.html)
+- [Marginalizing over Discrete Parameters] (wiki/marginaloverdiscrete.html)
 
 
 ### Bayes - Basics
-- Bayesian (wiki/bayes.html)
-- Choosing Priors (wiki/priors.html)
-- Posterior, Posterior Predictive (and credible intervals)
+- [Bayesian] (wiki/bayes.html)
+- [Choosing Priors] (wiki/priors.html)
+- [Summarizing the posterior: MAP, Mean, Credible Intervals] (wiki/posterior_summaries.html)
 - Example: [Beta-Binomial and Globe Tossing] (wiki/globemode.html)
 - Example: [Fitting a normal distribution to data] (wiki/normalmodel.html)
 
