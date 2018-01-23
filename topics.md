@@ -190,10 +190,8 @@ layout: default
 
 
 ### Bayes - Pooling & Hierarchical Models
-- Pooling: 100 county-sized averages or one state-sized average?
+- [Pooling: 100 county-sized averages or one state-sized average?] (wiki/pooling_intro.html)
 - [Hierarchical Models] (wiki/hierarch.html)
-- Fitting via Method of Moments
-- Fitting via Full Bayes
 - [Tumors in Rats] (wiki/tumorlab.html)
 
 
