@@ -6,7 +6,7 @@ layout: default
 
 ### Foundations - Math
 - [Jensen’s Inequality: The line connecting two points on a parabola is above the parabola] (wiki/jensens.html)
-- [Calculus: Stretching, Curvature, and Max/Mins] (wiki/Derivatives)
+- [Calculus: Stretching, Curvature, and Maxes/Mins] (wiki/Derivatives)
 
 
 ### Foundations - Probability
@@ -20,21 +20,19 @@ layout: default
 - [Law of Large Numbers: Averages converge] (wiki/LLN.html)
 - [Central Limit Theorem: The particular average you get follows a normal distribution] (wiki/CLT.html)
 - Hoefding's Inequality: Even finite sums aren't too wrong
-- TODO: roll back this CLT to just talk about sums of RVs; talk about utility in "in practice"(?)
 
 ### Foundations - Distributions
 - Distributions Cheat Sheet
-- [TODO: break this up](wiki/distributions.html)
 - Gaussian Distribution
 - Multi-Dimensional Gaussian
 - Bernoulli Distribution
 - Binomial Distribution
 - Poisson Distribution
 - Exponential Distribution
-- Cauchy
-- Uniform
-- Beta
-- Gamma
+- Cauchy Distribution
+- Uniform Distribution
+- Beta Distribution
+- Gamma Distribution
 
 
 ### Foundations - Data
@@ -45,13 +43,13 @@ layout: default
 
 
 ### Foundations - Statistics
+- [Terminology] (wiki/stats_terms.html)
 - [Statistical Models and Fitting] (wiki/what_is_a_model.html)
 - [Fitting method: Method of Moments] (wiki/method_of_moments.html)
 - [Fitting method: Maximum Likelihood] (wiki/MLE.html)
 - Identifiability: Sometimes there are two answers. Try to avoid that.
 - p-values: How rare (what percentile) is the data under a given parameter setting?
 - Confidence Intervals: Drawn so that if you re-collected the data and re-made the intervals 95% of the intervals would contain the true value, whatever it is
-- [Terminology] (wiki/stats_terms.html)
 
 ### Foundations - Models
 - [Linear regression (as least squares): Define a loss function and run with it] (wiki/lin_reg_ols)
@@ -116,7 +114,7 @@ layout: default
 - [Gradient Descent in one dimension] (wiki/optimcalc.html)
 - [Gradient Descent and SGD] (wiki/gradientdescent.html)
 - [Simulated Annealing] (wiki/simanneal.html)
-
+- [Annealing Example] (wiki/baseball_example.html): selecting variables for a linear model
 
 ### Sampling from a Distribution
 - Samples vs PDFs: why we like having a sample
@@ -177,17 +175,19 @@ layout: default
 - [Bayesian] (wiki/bayes.html)
 - [Choosing Priors] (wiki/priors.html)
 - [Summarizing the posterior: MAP, Mean, Credible Intervals] (wiki/posterior_summaries.html)
-- [Levels of Bayesian Analysis: Maximum Likelihood, MAP, Empirical Bayes, Full Bayes] (wiki/levelsofbayes.md)
+- [Levels of Bayesian Analysis: Maximum Likelihood, MAP, Empirical Bayes, Full Bayes] (wiki/levelsofbayes.html)
 - Example: [Beta-Binomial and Globe Tossing] (wiki/globemode.html)
 - Example: [Fitting a normal distribution to data] (wiki/normalmodel.html)
-
+- Example: [An unidentifiable model] (wiki/identifiability.html)
+- Example: [A finding a discontinuity in a time series] (wiki/switchpoint.html)
+- [Model Checking] (wiki/speedoflight.html)
 
 ### Bayes - Regression
 - Example: [Fitting a normal model in pymc3] (wiki/normalmodelwithpymc.html)
 - [Bayesian Regression] (wiki/bayesianregression.html)
 - [From the normal model to regression]	(wiki/pymcnormalreg.html)
 - Example: [Regression with custom priors] (wiki/reguninfprior.html)
-
+- Example: [Unidentifiability, Ridge, Lasso] (wiki/uiridgelasso.html)
 
 ### Bayes - Pooling & Hierarchical Models
 - [Pooling: 100 county-sized averages or one state-sized average?] (wiki/pooling_intro.html)
@@ -213,10 +213,11 @@ layout: default
 
 ### Model Fitting
 - [Maximum Likelihood] (wiki/MLE.html)
-- Method of Moments
+- [Method of Moments] (wiki/method_of_moments.html)
 - [The EM algorithm] (wiki/EM.html)
-- [EM with indices] (wiki/EM.html)
-- [EM example] (wiki/EM.html)
+- [Why EM Works] (wiki/em_why_work.html)
+- [EM example] (wiki/em_example.html)
+- Extra: [EM with indices] (wiki/em_indices.html)
 - [Variational Inference] (wiki/VI.html)
 - [ADVI] (wiki/advi.html)
 
@@ -228,7 +229,7 @@ layout: default
 
 
 ###Technologies
-[SKlearn] (wiki/sklearn.html)
+- [SKlearn] (wiki/sklearn.html)
 
 
 ### Deep Dives
